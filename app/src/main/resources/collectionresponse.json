@@ -1,0 +1,2613 @@
+{
+    "elapsedMilliseconds": 0,
+    "count": 758047,
+    "countFacets": {
+        "hasimage": 569681,
+        "ondisplay": 8430
+    },
+    "artObjects": [
+        {
+            "links": {
+                "self": "http://www.rijksmuseum.nl/api/nl/collection/BK-16676",
+                "web": "http://www.rijksmuseum.nl/nl/collectie/BK-16676"
+            },
+            "id": "nl-BK-16676",
+            "objectNumber": "BK-16676",
+            "title": "Bureau",
+            "hasImage": true,
+            "principalOrFirstMaker": "Abraham Roentgen",
+            "longTitle": "Bureau, Abraham Roentgen, ca. 1758 - ca. 1760",
+            "showImage": true,
+            "permitDownload": true,
+            "webImage": {
+                "guid": "6fdcd710-d31d-4de3-8ae6-d8687067ef74",
+                "offsetPercentageX": 0,
+                "offsetPercentageY": 0,
+                "width": 3000,
+                "height": 2779,
+                "url": "https://lh4.ggpht.com/FeheHnW8-KOx-prHRCvly8ReF9WKysmPJDEd99EEVDViH1DvYytyDpkjnkeyqqj85WNbrkXFaoFe0jBKB9DdNJApLQ=s0"
+            },
+            "headerImage": {
+                "guid": "deee4f1f-802b-4289-9367-d8926101690c",
+                "offsetPercentageX": 0,
+                "offsetPercentageY": 0,
+                "width": 1920,
+                "height": 460,
+                "url": "https://lh4.ggpht.com/1alZFw9qSNw6T81R-SqFeWNurK1J5edyh6SWunRdQC5V63vGjphJp1bcu_Gy9lMAnJEcpturH7jsGZV-7uUKnj1HHz0=s0"
+            },
+            "productionPlaces": [
+                "Neuwied"
+            ]
+        },
+        {
+            "links": {
+                "self": "http://www.rijksmuseum.nl/api/nl/collection/BK-2000-17",
+                "web": "http://www.rijksmuseum.nl/nl/collectie/BK-2000-17"
+            },
+            "id": "nl-BK-2000-17",
+            "objectNumber": "BK-2000-17",
+            "title": "Zelfportret",
+            "hasImage": true,
+            "principalOrFirstMaker": "Johan Gregor van der Schardt",
+            "longTitle": "Zelfportret, Johan Gregor van der Schardt, ca. 1573 - ca. 1580",
+            "showImage": true,
+            "permitDownload": true,
+            "webImage": {
+                "guid": "876a46b0-9d66-4d1f-8a29-0ad06c2bade8",
+                "offsetPercentageX": 0,
+                "offsetPercentageY": 0,
+                "width": 3000,
+                "height": 2521,
+                "url": "https://lh3.googleusercontent.com/FjUHATQW1qcRggtsD9L9SXeeFHVpBCvQ-taIof6oRh2U_6-wI6Oycr7As85EEty5_hXypsdLdhs7HZQay4aRnWf_xGhnAVb23olEUes=s0"
+            },
+            "headerImage": {
+                "guid": "717fb9f6-daf4-4031-8653-b163f6764137",
+                "offsetPercentageX": 0,
+                "offsetPercentageY": 0,
+                "width": 1920,
+                "height": 460,
+                "url": "https://lh3.googleusercontent.com/3Pr6dZbLsvywtlEVHiONIoaravHYaAP_T7WiQ2hWexacsZ2Tn6eEmN8syJ1qER5nvw7PD7cabdsc9QnM0r3wfWFFAUh-omKO6FdnGt4T=s0"
+            },
+            "productionPlaces": [
+                "Neurenberg"
+            ]
+        },
+        {
+            "links": {
+                "self": "http://www.rijksmuseum.nl/api/nl/collection/NG-NM-7687",
+                "web": "http://www.rijksmuseum.nl/nl/collectie/NG-NM-7687"
+            },
+            "id": "nl-NG-NM-7687",
+            "objectNumber": "NG-NM-7687",
+            "title": "Klok en kruithoorn",
+            "hasImage": true,
+            "principalOrFirstMaker": "anoniem",
+            "longTitle": "Klok en kruithoorn, anoniem, ca. 1590 - ca. 1596",
+            "showImage": true,
+            "permitDownload": true,
+            "webImage": {
+                "guid": "05f438f9-f42d-4fec-ad6f-0feb3b08fed2",
+                "offsetPercentageX": 0,
+                "offsetPercentageY": 1,
+                "width": 1672,
+                "height": 2500,
+                "url": "https://lh3.ggpht.com/lAJ1wnr_hEOncOfh9eKzvaS8w-fhLLq5yGlzHBctnjgyOzsbuP4cGIqP4q0A-YvnyXBhJi96il6NIZNhRVW-BVg2lW0=s0"
+            },
+            "headerImage": {
+                "guid": "7bf07c8d-4ecb-452d-bdd0-f2197c0d9ba9",
+                "offsetPercentageX": 0,
+                "offsetPercentageY": 0,
+                "width": 1920,
+                "height": 460,
+                "url": "https://lh6.ggpht.com/9c8SEaU_VJWbz1Xw__DPWs_sB4j6Z1bl3ieZRe0-279dePcw8nyxo6g6YYVH_m-prsrtSAsFTVzoIICJ560vKVjj5vQ=s0"
+            },
+            "productionPlaces": [
+                "Lage Landen",
+                "Duitsland",
+                "Frankrijk"
+            ]
+        },
+        {
+            "links": {
+                "self": "http://www.rijksmuseum.nl/api/nl/collection/BK-17496",
+                "web": "http://www.rijksmuseum.nl/nl/collectie/BK-17496"
+            },
+            "id": "nl-BK-17496",
+            "objectNumber": "BK-17496",
+            "title": "Blauwe ara",
+            "hasImage": true,
+            "principalOrFirstMaker": "Meissener Porzellan Manufaktur",
+            "longTitle": "Blauwe ara, Meissener Porzellan Manufaktur, 1731",
+            "showImage": true,
+            "permitDownload": true,
+            "webImage": {
+                "guid": "fb490c6f-638a-44a8-81d3-ea27a04eae46",
+                "offsetPercentageX": 0,
+                "offsetPercentageY": 0,
+                "width": 1822,
+                "height": 2500,
+                "url": "https://lh3.ggpht.com/5sc-SGzzgobkHnmnykUi4B1PqMtadoFqXOhYLQmsAI0Mcs_FeCoXT6loaiAUhr_zKvp2iyXntDxVhCzeVwjFulsjzRE=s0"
+            },
+            "headerImage": {
+                "guid": "a355f7dd-d274-4797-9d71-e8f2fb0661ec",
+                "offsetPercentageX": 0,
+                "offsetPercentageY": 0,
+                "width": 1822,
+                "height": 437,
+                "url": "https://lh3.ggpht.com/uXIT4pKPtocEUVmq6KZNWz4tSygyUZPi7HCCTq4big12nOUFBxJCIBM8vrDwepAM62ABjG-V6JnALRGgxJqWCfBLTQ=s0"
+            },
+            "productionPlaces": [
+                "Meissen",
+                "Meissen",
+                "Meissen"
+            ]
+        },
+        {
+            "links": {
+                "self": "http://www.rijksmuseum.nl/api/nl/collection/BK-1975-81",
+                "web": "http://www.rijksmuseum.nl/nl/collectie/BK-1975-81"
+            },
+            "id": "nl-BK-1975-81",
+            "objectNumber": "BK-1975-81",
+            "title": "Kast",
+            "hasImage": true,
+            "principalOrFirstMaker": "Herman Doomer",
+            "longTitle": "Kast, Herman Doomer, ca. 1635 - ca. 1645",
+            "showImage": true,
+            "permitDownload": true,
+            "webImage": {
+                "guid": "3134064e-2449-4b00-97a3-3bb7471e8b69",
+                "offsetPercentageX": 0,
+                "offsetPercentageY": 0,
+                "width": 2026,
+                "height": 2500,
+                "url": "https://lh3.googleusercontent.com/tGI4dOAfJLBbewwspzXpUnSZxEKFACv9Y3FHqAxQUtN2p4AXt2MS9oFv6eJyIBtr7gvzmv58vSitMFVeHY0TGsfOfDN2=s0"
+            },
+            "headerImage": {
+                "guid": "fe1d23fe-b4e3-4b27-9c1d-ac40456e928e",
+                "offsetPercentageX": 0,
+                "offsetPercentageY": 0,
+                "width": 1920,
+                "height": 460,
+                "url": "https://lh3.googleusercontent.com/H29bm6OMJSpiuVUKfoIZXDjAjvB40NywTXP7bYZZecT5cbRWDXQQtj-7ZZfaJ4-H4s30naG928J1Fnf0fZ7ALkPPgg=s0"
+            },
+            "productionPlaces": []
+        },
+        {
+            "links": {
+                "self": "http://www.rijksmuseum.nl/api/nl/collection/SK-C-5",
+                "web": "http://www.rijksmuseum.nl/nl/collectie/SK-C-5"
+            },
+            "id": "nl-SK-C-5",
+            "objectNumber": "SK-C-5",
+            "title": "De Nachtwacht",
+            "hasImage": true,
+            "principalOrFirstMaker": "Rembrandt van Rijn",
+            "longTitle": "De Nachtwacht, Rembrandt van Rijn, 1642",
+            "showImage": true,
+            "permitDownload": true,
+            "webImage": {
+                "guid": "bbd1fae8-4023-4859-8ed1-d38616aec96c",
+                "offsetPercentageX": 0,
+                "offsetPercentageY": 1,
+                "width": 5656,
+                "height": 4704,
+                "url": "https://lh3.googleusercontent.com/SsEIJWka3_cYRXXSE8VD3XNOgtOxoZhqW1uB6UFj78eg8gq3G4jAqL4Z_5KwA12aD7Leqp27F653aBkYkRBkEQyeKxfaZPyDx0O8CzWg=s0"
+            },
+            "headerImage": {
+                "guid": "29a2a516-f1d2-4713-9cbd-7a4458026057",
+                "offsetPercentageX": 0,
+                "offsetPercentageY": 0,
+                "width": 1920,
+                "height": 460,
+                "url": "https://lh3.googleusercontent.com/nAHNYM604vhPa1hbE_hBJw55JI01-ls0zCwHwvDEES38PpGyGHMgG_vaigVWSuK8GFkaxfn2Dmevw_Nmujn5dKW3jItgS6QaSI8VIsiH=s0"
+            },
+            "productionPlaces": [
+                "Amsterdam"
+            ]
+        },
+        {
+            "links": {
+                "self": "http://www.rijksmuseum.nl/api/nl/collection/SK-A-3580",
+                "web": "http://www.rijksmuseum.nl/nl/collectie/SK-A-3580"
+            },
+            "id": "nl-SK-A-3580",
+            "objectNumber": "SK-A-3580",
+            "title": "De Singelbrug bij de Paleisstraat in Amsterdam",
+            "hasImage": true,
+            "principalOrFirstMaker": "George Hendrik Breitner",
+            "longTitle": "De Singelbrug bij de Paleisstraat in Amsterdam, George Hendrik Breitner, 1898",
+            "showImage": true,
+            "permitDownload": true,
+            "webImage": {
+                "guid": "cd15e2fa-b1f6-41f4-9e9e-c2ca87abcca3",
+                "offsetPercentageX": 0,
+                "offsetPercentageY": 0,
+                "width": 2880,
+                "height": 1897,
+                "url": "https://lh3.googleusercontent.com/Bawo7r1nPZV6sJ4OHZJHdKV_4Ky59vquAR7KoUXcNZgx9fqTaOW-QaOM9qoyYhOTAopzjt9OIfW06RMwa-9eJW9KjQw=s0"
+            },
+            "headerImage": {
+                "guid": "fef39f74-9783-44c9-acae-69eac3a76b01",
+                "offsetPercentageX": 0,
+                "offsetPercentageY": 0,
+                "width": 1920,
+                "height": 460,
+                "url": "https://lh3.googleusercontent.com/jR6y5a8lFvgYe37WxLPQJZTjBAaBB6aIFYMsFw9gGP1y69TltkVQdWQVoZhSyGN9ZnPKR5taEJPbGhUBSDxlOmNqoyI=s0"
+            },
+            "productionPlaces": [
+                "Amsterdam"
+            ]
+        },
+        {
+            "links": {
+                "self": "http://www.rijksmuseum.nl/api/nl/collection/SK-A-4",
+                "web": "http://www.rijksmuseum.nl/nl/collectie/SK-A-4"
+            },
+            "id": "nl-SK-A-4",
+            "objectNumber": "SK-A-4",
+            "title": "De bedreigde zwaan",
+            "hasImage": true,
+            "principalOrFirstMaker": "Jan Asselijn",
+            "longTitle": "De bedreigde zwaan, Jan Asselijn, ca. 1650",
+            "showImage": true,
+            "permitDownload": true,
+            "webImage": {
+                "guid": "2f3951aa-bbde-4e10-bbf8-0fcb2c0ed08a",
+                "offsetPercentageX": 0,
+                "offsetPercentageY": 0,
+                "width": 2916,
+                "height": 2459,
+                "url": "https://lh3.googleusercontent.com/tm1DbZrAP0uBM-OJhLwvKir1Le5LglRF_bvbaNi6m-F_pIyttsWQz040soRY9pWA9PgNEYFA_fBkg_keYixRXCAjz9Q=s0"
+            },
+            "headerImage": {
+                "guid": "8fb60afb-0fb2-496f-ab33-921077fc13df",
+                "offsetPercentageX": 0,
+                "offsetPercentageY": 0,
+                "width": 1920,
+                "height": 460,
+                "url": "https://lh3.googleusercontent.com/YwB03AMldxZhUOsLJYjKEfz5L15-WpbyvdFVctMbysr8McUY8rePhcgpIU7mJft7SOSqknEjbx55I6LnS2LC13peFUwk=s0"
+            },
+            "productionPlaces": []
+        },
+        {
+            "links": {
+                "self": "http://www.rijksmuseum.nl/api/nl/collection/SK-A-3584",
+                "web": "http://www.rijksmuseum.nl/nl/collectie/SK-A-3584"
+            },
+            "id": "nl-SK-A-3584",
+            "objectNumber": "SK-A-3584",
+            "title": "Meisje in witte kimono",
+            "hasImage": true,
+            "principalOrFirstMaker": "George Hendrik Breitner",
+            "longTitle": "Meisje in witte kimono, George Hendrik Breitner, 1894",
+            "showImage": true,
+            "permitDownload": true,
+            "webImage": {
+                "guid": "5dea6805-8cf3-4d6e-b334-89adfdd6f341",
+                "offsetPercentageX": 0,
+                "offsetPercentageY": 0,
+                "width": 2535,
+                "height": 2622,
+                "url": "https://lh3.googleusercontent.com/0bgOiMrBM2GuhW_pNeQW711GuB3kD7Gq7AILGHaJGeWKa1Fu1hUJGpOjvSpiP_XpgRlC4jVmH0Z1233PEPMJTfNRR7Q=s0"
+            },
+            "headerImage": {
+                "guid": "ca275add-7098-4726-94df-4743cc5f1ef2",
+                "offsetPercentageX": 0,
+                "offsetPercentageY": 0,
+                "width": 1920,
+                "height": 460,
+                "url": "https://lh3.googleusercontent.com/DbySiXwDdYlhl0r-fmM1CdLfro5aC1S0KdapBqWJyboOCgWYO1v50-8B2xWRRbqrv8rqKDyLsojkPv0h2-XKjmJbLyoV=s0"
+            },
+            "productionPlaces": [
+                "Amsterdam"
+            ]
+        },
+        {
+            "links": {
+                "self": "http://www.rijksmuseum.nl/api/nl/collection/SK-C-216",
+                "web": "http://www.rijksmuseum.nl/nl/collectie/SK-C-216"
+            },
+            "id": "nl-SK-C-216",
+            "objectNumber": "SK-C-216",
+            "title": "Isaak en Rebekka, bekend als ‘Het Joodse bruidje’",
+            "hasImage": true,
+            "principalOrFirstMaker": "Rembrandt van Rijn",
+            "longTitle": "Isaak en Rebekka, bekend als ‘Het Joodse bruidje’, Rembrandt van Rijn, ca. 1665 - ca. 1669",
+            "showImage": true,
+            "permitDownload": true,
+            "webImage": {
+                "guid": "2fe159d5-619a-46d3-b3d2-9412e6f6bdd8",
+                "offsetPercentageX": 0,
+                "offsetPercentageY": 0,
+                "width": 2500,
+                "height": 1817,
+                "url": "https://lh3.googleusercontent.com/mAyAjvYjIeAIlByhJx1Huctgeb58y7519XYP38oL1FXarhVlcXW7kxuwayOCFdnwtOp6B6F0HJmmws-Ceo5b_pNSSQs=s0"
+            },
+            "headerImage": {
+                "guid": "10911bfe-4e23-4c3a-95f7-515609f4d711",
+                "offsetPercentageX": 0,
+                "offsetPercentageY": 0,
+                "width": 1925,
+                "height": 461,
+                "url": "https://lh3.googleusercontent.com/0fTHP4xUsJZbQjzIHYtgHr1gRWBXjm9udaZT4ah35J_LyNzga-SyI0h61klse9sJqn53eUfuVIWZvP8IhW0jN4v91SM=s0"
+            },
+            "productionPlaces": []
+        }
+    ],
+    "facets": [
+        {
+            "facets": [
+                {
+                    "key": "George Hendrik Breitner",
+                    "value": 5584
+                },
+                {
+                    "key": "Jan Luyken",
+                    "value": 4904
+                },
+                {
+                    "key": "Reinier Vinkeles (I)",
+                    "value": 4475
+                },
+                {
+                    "key": "Marius Bauer",
+                    "value": 3412
+                },
+                {
+                    "key": "Isaac Israels",
+                    "value": 2866
+                },
+                {
+                    "key": "Johannes Tavenraat",
+                    "value": 2657
+                },
+                {
+                    "key": "Daniel Nikolaus Chodowiecki",
+                    "value": 2489
+                },
+                {
+                    "key": "Aat Veldhoen",
+                    "value": 2433
+                },
+                {
+                    "key": "Bernard Picart",
+                    "value": 2400
+                },
+                {
+                    "key": "Vincent Samuel Mentzel",
+                    "value": 2343
+                },
+                {
+                    "key": "Willem Witsen",
+                    "value": 2317
+                },
+                {
+                    "key": "anoniem (Monumentenzorg)",
+                    "value": 2045
+                },
+                {
+                    "key": "Antonio Tempesta",
+                    "value": 1918
+                },
+                {
+                    "key": "Jacob Houbraken",
+                    "value": 1847
+                },
+                {
+                    "key": "Carel Adolph Lion Cachet",
+                    "value": 1798
+                },
+                {
+                    "key": "Rembrandt van Rijn",
+                    "value": 1542
+                },
+                {
+                    "key": "Simon Fokke",
+                    "value": 1515
+                },
+                {
+                    "key": "Romeyn de Hooghe",
+                    "value": 1314
+                },
+                {
+                    "key": "Philips Galle",
+                    "value": 1299
+                },
+                {
+                    "key": "Richard Nicolaüs Roland Holst",
+                    "value": 1297
+                },
+                {
+                    "key": "Sébastien Leclerc (I)",
+                    "value": 1272
+                },
+                {
+                    "key": "Meissener Porzellan Manufaktur",
+                    "value": 1229
+                },
+                {
+                    "key": "Jozef Israëls",
+                    "value": 1193
+                },
+                {
+                    "key": "Johan Michaël Schmidt Crans",
+                    "value": 1174
+                },
+                {
+                    "key": "Jan Veth",
+                    "value": 1169
+                },
+                {
+                    "key": "Willem Diepraam",
+                    "value": 1150
+                },
+                {
+                    "key": "Crispijn van de Passe (I)",
+                    "value": 1125
+                },
+                {
+                    "key": "Wenceslaus Hollar",
+                    "value": 1124
+                },
+                {
+                    "key": "Frans Hogenberg",
+                    "value": 1118
+                },
+                {
+                    "key": "Jacob de Gheyn (II)",
+                    "value": 1115
+                },
+                {
+                    "key": "Gerrit Willem Dijsselhof",
+                    "value": 1114
+                },
+                {
+                    "key": "Johann Sadeler (I)",
+                    "value": 1030
+                },
+                {
+                    "key": "Stefano della Bella",
+                    "value": 1021
+                },
+                {
+                    "key": "Jeanne Bieruma Oosting",
+                    "value": 1017
+                },
+                {
+                    "key": "Caspar Luyken",
+                    "value": 1013
+                },
+                {
+                    "key": "Michel Wolgemut",
+                    "value": 1002
+                },
+                {
+                    "key": "Hendrick Goltzius",
+                    "value": 993
+                },
+                {
+                    "key": "Hendrik Spilman",
+                    "value": 986
+                },
+                {
+                    "key": "Anton Mauve",
+                    "value": 983
+                },
+                {
+                    "key": "Leo Gestel",
+                    "value": 971
+                },
+                {
+                    "key": "Adriaen Collaert",
+                    "value": 970
+                },
+                {
+                    "key": "Reinier Willem Petrus de Vries (1874-1952)",
+                    "value": 963
+                },
+                {
+                    "key": "Virgilius Solis",
+                    "value": 960
+                },
+                {
+                    "key": "Jacques Callot",
+                    "value": 945
+                },
+                {
+                    "key": "Jan van de Velde (II)",
+                    "value": 942
+                },
+                {
+                    "key": "Pieter Schenk (I)",
+                    "value": 935
+                },
+                {
+                    "key": "Cornelis Vreedenburgh",
+                    "value": 913
+                },
+                {
+                    "key": "diverse vervaardigers",
+                    "value": 907
+                },
+                {
+                    "key": "Carel Nicolaas Storm van 's-Gravesande",
+                    "value": 887
+                },
+                {
+                    "key": "Christoffel van Sichem (II)",
+                    "value": 886
+                },
+                {
+                    "key": "Theo van Hoytema",
+                    "value": 878
+                },
+                {
+                    "key": "veuve Delpech (Naudet)",
+                    "value": 857
+                },
+                {
+                    "key": "Anselmus Boëtius de Boodt",
+                    "value": 835
+                },
+                {
+                    "key": "Israël Silvestre",
+                    "value": 826
+                },
+                {
+                    "key": "Georg Rueter",
+                    "value": 808
+                },
+                {
+                    "key": "Johannes of Lucas van Doetechum",
+                    "value": 799
+                },
+                {
+                    "key": "August Allebé",
+                    "value": 792
+                },
+                {
+                    "key": "Reijer Stolk",
+                    "value": 783
+                },
+                {
+                    "key": "Willem Cornelis Rip",
+                    "value": 778
+                },
+                {
+                    "key": "Jean Lepautre",
+                    "value": 776
+                },
+                {
+                    "key": "Eva Charlotte Pennink-Boelen",
+                    "value": 768
+                },
+                {
+                    "key": "Jan Caspar Philips",
+                    "value": 767
+                },
+                {
+                    "key": "Abraham Rademaker",
+                    "value": 737
+                },
+                {
+                    "key": "Giorgio Sommer",
+                    "value": 736
+                },
+                {
+                    "key": "Hendrik Doijer",
+                    "value": 736
+                },
+                {
+                    "key": "Simon Frisius",
+                    "value": 727
+                },
+                {
+                    "key": "Manufactuur Oud-Loosdrecht",
+                    "value": 713
+                },
+                {
+                    "key": "Claude Mellan",
+                    "value": 711
+                },
+                {
+                    "key": "Crispijn van de Passe (II)",
+                    "value": 710
+                },
+                {
+                    "key": "Hieronymus Wierix",
+                    "value": 701
+                },
+                {
+                    "key": "Charles Donker",
+                    "value": 699
+                },
+                {
+                    "key": "Pam Georg Rueter",
+                    "value": 691
+                },
+                {
+                    "key": "Martin Bernigeroth",
+                    "value": 684
+                },
+                {
+                    "key": "Albert Greiner",
+                    "value": 680
+                },
+                {
+                    "key": "Carel Christiaan Antony Last",
+                    "value": 672
+                },
+                {
+                    "key": "Jacob Ernst Marcus",
+                    "value": 660
+                },
+                {
+                    "key": "Henry Pauw van Wieldrecht",
+                    "value": 658
+                },
+                {
+                    "key": "Giovanni Battista Piranesi",
+                    "value": 648
+                },
+                {
+                    "key": "Hendrik Herman van den Berg",
+                    "value": 645
+                },
+                {
+                    "key": "Jan Punt",
+                    "value": 642
+                },
+                {
+                    "key": "Delizy",
+                    "value": 629
+                },
+                {
+                    "key": "Johannes Wierix",
+                    "value": 626
+                },
+                {
+                    "key": "Neue Photographische Gesellschaft",
+                    "value": 625
+                },
+                {
+                    "key": "Anthonie van den Bos",
+                    "value": 618
+                },
+                {
+                    "key": "Johannes Josephus Aarts",
+                    "value": 617
+                },
+                {
+                    "key": "Carel Willink",
+                    "value": 611
+                },
+                {
+                    "key": "Antoon Derkinderen",
+                    "value": 610
+                },
+                {
+                    "key": "Jacob Matham",
+                    "value": 606
+                },
+                {
+                    "key": "Woodbury & Page",
+                    "value": 598
+                },
+                {
+                    "key": "Geldolph Adriaan Kessler",
+                    "value": 595
+                },
+                {
+                    "key": "Isaac Weissenbruch",
+                    "value": 594
+                },
+                {
+                    "key": "Peter Vos",
+                    "value": 594
+                },
+                {
+                    "key": "Johan Braakensiek",
+                    "value": 592
+                },
+                {
+                    "key": "Claes Jansz. Visscher (II)",
+                    "value": 591
+                },
+                {
+                    "key": "Aegidius Sadeler (II)",
+                    "value": 584
+                },
+                {
+                    "key": "Jan Brandes",
+                    "value": 573
+                },
+                {
+                    "key": "Hans Weiditz (II)",
+                    "value": 569
+                },
+                {
+                    "key": "Jacques Villon",
+                    "value": 566
+                },
+                {
+                    "key": "Johannes Immerzeel",
+                    "value": 564
+                },
+                {
+                    "key": "jonkheer Hendrik Teding van Berkhout (1879-1969)",
+                    "value": 562
+                }
+            ],
+            "name": "principalMaker",
+            "otherTerms": 753134,
+            "prettyName": 10
+        },
+        {
+            "facets": [
+                {
+                    "key": "prent",
+                    "value": 345922
+                },
+                {
+                    "key": "foto",
+                    "value": 119548
+                },
+                {
+                    "key": "albumblad",
+                    "value": 57195
+                },
+                {
+                    "key": "tekening",
+                    "value": 50551
+                },
+                {
+                    "key": "fotomechanische afdruk",
+                    "value": 41063
+                },
+                {
+                    "key": "bladzijde",
+                    "value": 39763
+                },
+                {
+                    "key": "boekillustratie",
+                    "value": 35403
+                },
+                {
+                    "key": "schetsboekblad",
+                    "value": 29213
+                },
+                {
+                    "key": "carte-de-visite",
+                    "value": 17055
+                },
+                {
+                    "key": "reproductie",
+                    "value": 14608
+                },
+                {
+                    "key": "prentbriefkaart",
+                    "value": 13984
+                },
+                {
+                    "key": "ornamentprent",
+                    "value": 13569
+                },
+                {
+                    "key": "ex libris",
+                    "value": 11895
+                },
+                {
+                    "key": "brief",
+                    "value": 11214
+                },
+                {
+                    "key": "stereofoto",
+                    "value": 10481
+                },
+                {
+                    "key": "volksprent",
+                    "value": 8704
+                },
+                {
+                    "key": "spotprent",
+                    "value": 6879
+                },
+                {
+                    "key": "modeprent",
+                    "value": 5983
+                },
+                {
+                    "key": "historiepenning",
+                    "value": 5918
+                },
+                {
+                    "key": "historieprent",
+                    "value": 5322
+                },
+                {
+                    "key": "kaart",
+                    "value": 5066
+                },
+                {
+                    "key": "ontwerp",
+                    "value": 5018
+                },
+                {
+                    "key": "schilderij",
+                    "value": 4804
+                },
+                {
+                    "key": "digitaal bestand",
+                    "value": 4731
+                },
+                {
+                    "key": "kabinetfoto",
+                    "value": 4645
+                },
+                {
+                    "key": "munt",
+                    "value": 4526
+                },
+                {
+                    "key": "titelpagina",
+                    "value": 4311
+                },
+                {
+                    "key": "boek",
+                    "value": 4166
+                },
+                {
+                    "key": "aquarel",
+                    "value": 3716
+                },
+                {
+                    "key": "boekillustratie (ontwerp)",
+                    "value": 3600
+                },
+                {
+                    "key": "documentaire foto",
+                    "value": 3336
+                },
+                {
+                    "key": "affiche",
+                    "value": 3100
+                },
+                {
+                    "key": "tekstblad",
+                    "value": 3081
+                },
+                {
+                    "key": "nieuwsprent",
+                    "value": 2960
+                },
+                {
+                    "key": "dameskleding",
+                    "value": 2726
+                },
+                {
+                    "key": "briefkaart",
+                    "value": 2608
+                },
+                {
+                    "key": "kostuumprent",
+                    "value": 2549
+                },
+                {
+                    "key": "schotel",
+                    "value": 2482
+                },
+                {
+                    "key": "titelprent",
+                    "value": 2482
+                },
+                {
+                    "key": "servet",
+                    "value": 2377
+                },
+                {
+                    "key": "bord (vaatwerk)",
+                    "value": 2239
+                },
+                {
+                    "key": "fragment",
+                    "value": 2114
+                },
+                {
+                    "key": "miniatuur (poppenhuisgoed)",
+                    "value": 2013
+                },
+                {
+                    "key": "rekenpenning",
+                    "value": 1990
+                },
+                {
+                    "key": "plattegrond",
+                    "value": 1896
+                },
+                {
+                    "key": "strook",
+                    "value": 1829
+                },
+                {
+                    "key": "tijdschrift",
+                    "value": 1705
+                },
+                {
+                    "key": "omslag",
+                    "value": 1692
+                },
+                {
+                    "key": "nieuwjaarswens",
+                    "value": 1652
+                },
+                {
+                    "key": "beeldhouwwerk",
+                    "value": 1639
+                },
+                {
+                    "key": "scherf",
+                    "value": 1562
+                },
+                {
+                    "key": "schilderijlijst",
+                    "value": 1511
+                },
+                {
+                    "key": "kalenderblad",
+                    "value": 1470
+                },
+                {
+                    "key": "meubilair",
+                    "value": 1441
+                },
+                {
+                    "key": "kleding",
+                    "value": 1403
+                },
+                {
+                    "key": "lijst",
+                    "value": 1397
+                },
+                {
+                    "key": "negatief",
+                    "value": 1343
+                },
+                {
+                    "key": "deksel",
+                    "value": 1300
+                },
+                {
+                    "key": "kop",
+                    "value": 1288
+                },
+                {
+                    "key": "handschrift",
+                    "value": 1210
+                },
+                {
+                    "key": "bovenkleding",
+                    "value": 1142
+                },
+                {
+                    "key": "fotoalbum",
+                    "value": 1109
+                },
+                {
+                    "key": "lantaarnplaatje (fotografisch)",
+                    "value": 1049
+                },
+                {
+                    "key": "opticaprent",
+                    "value": 1042
+                },
+                {
+                    "key": "ontwerptekening",
+                    "value": 1036
+                },
+                {
+                    "key": "vaas",
+                    "value": 1019
+                },
+                {
+                    "key": "eet- en drinkgerei",
+                    "value": 1011
+                },
+                {
+                    "key": "kom",
+                    "value": 989
+                },
+                {
+                    "key": "stereoglasdia",
+                    "value": 928
+                },
+                {
+                    "key": "doos",
+                    "value": 912
+                },
+                {
+                    "key": "kop-en-schotel",
+                    "value": 909
+                },
+                {
+                    "key": "tegel",
+                    "value": 906
+                },
+                {
+                    "key": "schetsboek",
+                    "value": 862
+                },
+                {
+                    "key": "bouwfragment",
+                    "value": 818
+                },
+                {
+                    "key": "penning",
+                    "value": 812
+                },
+                {
+                    "key": "sitspapier",
+                    "value": 812
+                },
+                {
+                    "key": "schutblad",
+                    "value": 792
+                },
+                {
+                    "key": "surimono",
+                    "value": 789
+                },
+                {
+                    "key": "herenkleding",
+                    "value": 788
+                },
+                {
+                    "key": "servies",
+                    "value": 752
+                },
+                {
+                    "key": "stereofoto (tissue)",
+                    "value": 748
+                },
+                {
+                    "key": "collage",
+                    "value": 715
+                },
+                {
+                    "key": "gildepenning",
+                    "value": 710
+                },
+                {
+                    "key": "boekband (ontwerp)",
+                    "value": 695
+                },
+                {
+                    "key": "glasnegatief",
+                    "value": 688
+                },
+                {
+                    "key": "kinderkleding",
+                    "value": 663
+                },
+                {
+                    "key": "stoel",
+                    "value": 661
+                },
+                {
+                    "key": "muziekinstrument",
+                    "value": 636
+                },
+                {
+                    "key": "beeld",
+                    "value": 621
+                },
+                {
+                    "key": "schaal",
+                    "value": 621
+                },
+                {
+                    "key": "miniatuur",
+                    "value": 619
+                },
+                {
+                    "key": "historisch objectvoorstelling",
+                    "value": 618
+                },
+                {
+                    "key": "demonstratiemodel",
+                    "value": 586
+                },
+                {
+                    "key": "kan",
+                    "value": 576
+                },
+                {
+                    "key": "propagandaprent",
+                    "value": 573
+                },
+                {
+                    "key": "pot",
+                    "value": 568
+                },
+                {
+                    "key": "sieraad",
+                    "value": 568
+                },
+                {
+                    "key": "visitekaartje",
+                    "value": 564
+                },
+                {
+                    "key": "bidprent",
+                    "value": 563
+                },
+                {
+                    "key": "document",
+                    "value": 558
+                }
+            ],
+            "name": "type",
+            "otherTerms": 0,
+            "prettyName": 3
+        },
+        {
+            "facets": [
+                {
+                    "key": "19",
+                    "value": 287358
+                },
+                {
+                    "key": "20",
+                    "value": 152383
+                },
+                {
+                    "key": "18",
+                    "value": 126437
+                },
+                {
+                    "key": "17",
+                    "value": 123781
+                },
+                {
+                    "key": "16",
+                    "value": 48074
+                },
+                {
+                    "key": "21",
+                    "value": 9333
+                },
+                {
+                    "key": "15",
+                    "value": 5356
+                },
+                {
+                    "key": "14",
+                    "value": 2159
+                },
+                {
+                    "key": "-2",
+                    "value": 1585
+                },
+                {
+                    "key": "13",
+                    "value": 398
+                },
+                {
+                    "key": "12",
+                    "value": 382
+                },
+                {
+                    "key": "-1",
+                    "value": 150
+                },
+                {
+                    "key": "10",
+                    "value": 130
+                },
+                {
+                    "key": "11",
+                    "value": 119
+                },
+                {
+                    "key": "9",
+                    "value": 110
+                },
+                {
+                    "key": "7",
+                    "value": 52
+                },
+                {
+                    "key": "8",
+                    "value": 50
+                },
+                {
+                    "key": "3",
+                    "value": 45
+                },
+                {
+                    "key": "2",
+                    "value": 38
+                },
+                {
+                    "key": "6",
+                    "value": 38
+                },
+                {
+                    "key": "5",
+                    "value": 29
+                },
+                {
+                    "key": "1",
+                    "value": 22
+                },
+                {
+                    "key": "4",
+                    "value": 17
+                },
+                {
+                    "key": "35",
+                    "value": 1
+                }
+            ],
+            "name": "dating.period",
+            "otherTerms": 0,
+            "prettyName": 4
+        },
+        {
+            "facets": [
+                {
+                    "key": "Amsterdam",
+                    "value": 92648
+                },
+                {
+                    "key": "Nederland",
+                    "value": 62377
+                },
+                {
+                    "key": "Parijs",
+                    "value": 51188
+                },
+                {
+                    "key": "Den Haag",
+                    "value": 22912
+                },
+                {
+                    "key": "Frankrijk",
+                    "value": 21368
+                },
+                {
+                    "key": "Antwerpen (stad)",
+                    "value": 19166
+                },
+                {
+                    "key": "Noordelijke Nederlanden",
+                    "value": 17260
+                },
+                {
+                    "key": "Italië",
+                    "value": 15596
+                },
+                {
+                    "key": "Londen",
+                    "value": 15002
+                },
+                {
+                    "key": "Haarlem",
+                    "value": 10759
+                },
+                {
+                    "key": "Rome",
+                    "value": 10494
+                },
+                {
+                    "key": "Duitsland",
+                    "value": 8951
+                },
+                {
+                    "key": "Berlijn",
+                    "value": 8804
+                },
+                {
+                    "key": "Leiden",
+                    "value": 7693
+                },
+                {
+                    "key": "Brussel (stad)",
+                    "value": 7482
+                },
+                {
+                    "key": "Utrecht",
+                    "value": 7183
+                },
+                {
+                    "key": "Japan",
+                    "value": 7140
+                },
+                {
+                    "key": "Rotterdam",
+                    "value": 6397
+                },
+                {
+                    "key": "Neurenberg",
+                    "value": 6034
+                },
+                {
+                    "key": "? Nederland",
+                    "value": 4488
+                },
+                {
+                    "key": "Lage Landen",
+                    "value": 4386
+                },
+                {
+                    "key": "China",
+                    "value": 4381
+                },
+                {
+                    "key": "Augsburg",
+                    "value": 4116
+                },
+                {
+                    "key": "Engeland",
+                    "value": 4068
+                },
+                {
+                    "key": "Delft",
+                    "value": 4011
+                },
+                {
+                    "key": "Leipzig",
+                    "value": 3940
+                },
+                {
+                    "key": "Zuidelijke Nederlanden",
+                    "value": 3621
+                },
+                {
+                    "key": "Venetië",
+                    "value": 3401
+                },
+                {
+                    "key": "Vaticaanstad",
+                    "value": 3225
+                },
+                {
+                    "key": "onbekend",
+                    "value": 3019
+                },
+                {
+                    "key": "Keulen",
+                    "value": 2869
+                },
+                {
+                    "key": "Wenen",
+                    "value": 2847
+                },
+                {
+                    "key": "? Frankrijk",
+                    "value": 2841
+                },
+                {
+                    "key": "Dordrecht",
+                    "value": 2580
+                },
+                {
+                    "key": "München",
+                    "value": 2488
+                },
+                {
+                    "key": "? Amsterdam",
+                    "value": 2470
+                },
+                {
+                    "key": "België",
+                    "value": 2433
+                },
+                {
+                    "key": "Suriname",
+                    "value": 2408
+                },
+                {
+                    "key": "Europa",
+                    "value": 2371
+                },
+                {
+                    "key": "Frankfurt am Main",
+                    "value": 2360
+                },
+                {
+                    "key": "New York",
+                    "value": 2324
+                },
+                {
+                    "key": "Praag",
+                    "value": 2322
+                },
+                {
+                    "key": "Arnhem",
+                    "value": 2255
+                },
+                {
+                    "key": "Florence",
+                    "value": 2194
+                },
+                {
+                    "key": "Dresden",
+                    "value": 1882
+                },
+                {
+                    "key": "? Duitsland",
+                    "value": 1867
+                },
+                {
+                    "key": "Verenigde Staten van Amerika",
+                    "value": 1696
+                },
+                {
+                    "key": "Groningen",
+                    "value": 1651
+                },
+                {
+                    "key": "Zwolle",
+                    "value": 1471
+                },
+                {
+                    "key": "Middelburg",
+                    "value": 1370
+                },
+                {
+                    "key": "Meissen",
+                    "value": 1288
+                },
+                {
+                    "key": "Turnhout",
+                    "value": 1288
+                },
+                {
+                    "key": "Tokyo",
+                    "value": 1270
+                },
+                {
+                    "key": "Sumatra",
+                    "value": 1223
+                },
+                {
+                    "key": "Nijmegen",
+                    "value": 1198
+                },
+                {
+                    "key": "Java",
+                    "value": 1155
+                },
+                {
+                    "key": "Oostenrijk",
+                    "value": 1143
+                },
+                {
+                    "key": "Leeuwarden",
+                    "value": 1041
+                },
+                {
+                    "key": "Maastricht",
+                    "value": 1030
+                },
+                {
+                    "key": "Nederlands-Indië",
+                    "value": 1028
+                },
+                {
+                    "key": "Spanje",
+                    "value": 1026
+                },
+                {
+                    "key": "Luik",
+                    "value": 1018
+                },
+                {
+                    "key": "West-Europa",
+                    "value": 983
+                },
+                {
+                    "key": "Indonesië",
+                    "value": 961
+                },
+                {
+                    "key": "Nancy",
+                    "value": 946
+                },
+                {
+                    "key": "Milaan",
+                    "value": 940
+                },
+                {
+                    "key": "Alkmaar",
+                    "value": 928
+                },
+                {
+                    "key": "? Parijs",
+                    "value": 905
+                },
+                {
+                    "key": "Hamburg",
+                    "value": 902
+                },
+                {
+                    "key": "Zwitserland",
+                    "value": 873
+                },
+                {
+                    "key": "Stockholm",
+                    "value": 857
+                },
+                {
+                    "key": "Batavia",
+                    "value": 841
+                },
+                {
+                    "key": "Noord-Nederland",
+                    "value": 831
+                },
+                {
+                    "key": "? Den Haag",
+                    "value": 829
+                },
+                {
+                    "key": "? Noord-Nederland",
+                    "value": 829
+                },
+                {
+                    "key": "Boston",
+                    "value": 822
+                },
+                {
+                    "key": "'s-Hertogenbosch",
+                    "value": 815
+                },
+                {
+                    "key": "Genève",
+                    "value": 782
+                },
+                {
+                    "key": "Purmerend",
+                    "value": 762
+                },
+                {
+                    "key": "Groot-Brittannië",
+                    "value": 761
+                },
+                {
+                    "key": "Napels",
+                    "value": 742
+                },
+                {
+                    "key": "Zürich (stad)",
+                    "value": 740
+                },
+                {
+                    "key": "Straatsburg (Frankrijk)",
+                    "value": 737
+                },
+                {
+                    "key": "Loosdrecht",
+                    "value": 728
+                },
+                {
+                    "key": "Deventer",
+                    "value": 701
+                },
+                {
+                    "key": "Brugge",
+                    "value": 658
+                },
+                {
+                    "key": "Jingdezhen",
+                    "value": 653
+                },
+                {
+                    "key": "Tsjechië",
+                    "value": 637
+                },
+                {
+                    "key": "? Noordelijke Nederlanden",
+                    "value": 630
+                },
+                {
+                    "key": "Egypte",
+                    "value": 629
+                },
+                {
+                    "key": "Verenigd Koninkrijk",
+                    "value": 629
+                },
+                {
+                    "key": "Zaltbommel",
+                    "value": 629
+                },
+                {
+                    "key": "? Italië",
+                    "value": 616
+                },
+                {
+                    "key": "Scheveningen",
+                    "value": 614
+                },
+                {
+                    "key": "Eindhoven",
+                    "value": 611
+                },
+                {
+                    "key": "India",
+                    "value": 575
+                },
+                {
+                    "key": "Moskou",
+                    "value": 568
+                },
+                {
+                    "key": "Istanboel",
+                    "value": 564
+                },
+                {
+                    "key": "Gent",
+                    "value": 556
+                },
+                {
+                    "key": "Hilversum",
+                    "value": 552
+                }
+            ],
+            "name": "place",
+            "otherTerms": 0,
+            "prettyName": 2
+        },
+        {
+            "facets": [
+                {
+                    "key": "papier",
+                    "value": 542786
+                },
+                {
+                    "key": "fotodrager",
+                    "value": 88690
+                },
+                {
+                    "key": "karton",
+                    "value": 78096
+                },
+                {
+                    "key": "inkt",
+                    "value": 42059
+                },
+                {
+                    "key": "potlood",
+                    "value": 38772
+                },
+                {
+                    "key": "krijt",
+                    "value": 27931
+                },
+                {
+                    "key": "barietpapier",
+                    "value": 14025
+                },
+                {
+                    "key": "chine collé",
+                    "value": 13085
+                },
+                {
+                    "key": "waterverf",
+                    "value": 12556
+                },
+                {
+                    "key": "zilver",
+                    "value": 11144
+                },
+                {
+                    "key": "linnen",
+                    "value": 10001
+                },
+                {
+                    "key": "hout",
+                    "value": 9394
+                },
+                {
+                    "key": "glas",
+                    "value": 9019
+                },
+                {
+                    "key": "porselein",
+                    "value": 8876
+                },
+                {
+                    "key": "koper",
+                    "value": 8489
+                },
+                {
+                    "key": "glazuur",
+                    "value": 7127
+                },
+                {
+                    "key": "zijde",
+                    "value": 5289
+                },
+                {
+                    "key": "drukinkt",
+                    "value": 5169
+                },
+                {
+                    "key": "olieverf",
+                    "value": 5150
+                },
+                {
+                    "key": "goud",
+                    "value": 5023
+                },
+                {
+                    "key": "dekverf",
+                    "value": 4936
+                },
+                {
+                    "key": "email",
+                    "value": 4407
+                },
+                {
+                    "key": "aardewerk",
+                    "value": 4373
+                },
+                {
+                    "key": "Oost-Indische inkt",
+                    "value": 4236
+                },
+                {
+                    "key": "brons",
+                    "value": 3967
+                },
+                {
+                    "key": "ijzer",
+                    "value": 3891
+                },
+                {
+                    "key": "metaal",
+                    "value": 3630
+                },
+                {
+                    "key": "PE-papier",
+                    "value": 3596
+                },
+                {
+                    "key": "messing",
+                    "value": 3490
+                },
+                {
+                    "key": "katoen",
+                    "value": 2977
+                },
+                {
+                    "key": "gelinieerd papier",
+                    "value": 2907
+                },
+                {
+                    "key": "leer",
+                    "value": 2890
+                },
+                {
+                    "key": "doek",
+                    "value": 2603
+                },
+                {
+                    "key": "verf",
+                    "value": 2589
+                },
+                {
+                    "key": "Japans papier",
+                    "value": 2587
+                },
+                {
+                    "key": "kobalt",
+                    "value": 2271
+                },
+                {
+                    "key": "paneel",
+                    "value": 1945
+                },
+                {
+                    "key": "textiel",
+                    "value": 1884
+                },
+                {
+                    "key": "faience",
+                    "value": 1826
+                },
+                {
+                    "key": "geruit papier",
+                    "value": 1788
+                },
+                {
+                    "key": "eikenhout",
+                    "value": 1680
+                },
+                {
+                    "key": "tinglazuur",
+                    "value": 1581
+                },
+                {
+                    "key": "wol",
+                    "value": 1469
+                },
+                {
+                    "key": "lood",
+                    "value": 1448
+                },
+                {
+                    "key": "tin",
+                    "value": 1408
+                },
+                {
+                    "key": "perkament",
+                    "value": 1402
+                },
+                {
+                    "key": "gouache (waterverf)",
+                    "value": 1396
+                },
+                {
+                    "key": "steengoed",
+                    "value": 1385
+                },
+                {
+                    "key": "grafiet",
+                    "value": 1360
+                },
+                {
+                    "key": "transparant papier",
+                    "value": 1334
+                },
+                {
+                    "key": "verguldsel",
+                    "value": 1294
+                },
+                {
+                    "key": "houtskool",
+                    "value": 1286
+                },
+                {
+                    "key": "fluweel",
+                    "value": 1246
+                },
+                {
+                    "key": "ivoor",
+                    "value": 1093
+                },
+                {
+                    "key": "kant (materiaal)",
+                    "value": 1047
+                },
+                {
+                    "key": "stijfselverf",
+                    "value": 1014
+                },
+                {
+                    "key": "pen (veer)",
+                    "value": 927
+                },
+                {
+                    "key": "bladgoud",
+                    "value": 923
+                },
+                {
+                    "key": "calqueerpapier",
+                    "value": 911
+                },
+                {
+                    "key": "notenhout",
+                    "value": 751
+                },
+                {
+                    "key": "lak",
+                    "value": 740
+                },
+                {
+                    "key": "Oosters papier",
+                    "value": 730
+                },
+                {
+                    "key": "geprepareerd papier",
+                    "value": 716
+                },
+                {
+                    "key": "pâte",
+                    "value": 715
+                },
+                {
+                    "key": "goudverf",
+                    "value": 675
+                },
+                {
+                    "key": "kunststof",
+                    "value": 610
+                },
+                {
+                    "key": "touw",
+                    "value": 603
+                },
+                {
+                    "key": "pijpaarde",
+                    "value": 567
+                },
+                {
+                    "key": "ebbenhout",
+                    "value": 553
+                },
+                {
+                    "key": "plastic",
+                    "value": 540
+                },
+                {
+                    "key": "celluloid",
+                    "value": 529
+                },
+                {
+                    "key": "satijn",
+                    "value": 481
+                },
+                {
+                    "key": "parelmoer",
+                    "value": 462
+                },
+                {
+                    "key": "loodglazuur",
+                    "value": 454
+                },
+                {
+                    "key": "inkjetinkt",
+                    "value": 447
+                },
+                {
+                    "key": "fotografische film",
+                    "value": 446
+                },
+                {
+                    "key": "marmer",
+                    "value": 445
+                },
+                {
+                    "key": "glas-in-lood",
+                    "value": 440
+                },
+                {
+                    "key": "grisailleverf",
+                    "value": 440
+                },
+                {
+                    "key": "tule",
+                    "value": 439
+                },
+                {
+                    "key": "kraakporselein",
+                    "value": 436
+                },
+                {
+                    "key": "mahoniehout",
+                    "value": 431
+                },
+                {
+                    "key": "gouddraad",
+                    "value": 401
+                },
+                {
+                    "key": "steen (materiaal)",
+                    "value": 379
+                },
+                {
+                    "key": "zink",
+                    "value": 369
+                },
+                {
+                    "key": "viltstift",
+                    "value": 365
+                },
+                {
+                    "key": "goudkleurig bladmetaal",
+                    "value": 358
+                },
+                {
+                    "key": "krantenpapier",
+                    "value": 357
+                },
+                {
+                    "key": "terracotta",
+                    "value": 353
+                },
+                {
+                    "key": "been",
+                    "value": 344
+                },
+                {
+                    "key": "zilverdraad",
+                    "value": 332
+                },
+                {
+                    "key": "batist",
+                    "value": 328
+                },
+                {
+                    "key": "pastelkrijt",
+                    "value": 309
+                },
+                {
+                    "key": "staal",
+                    "value": 304
+                },
+                {
+                    "key": "balpen",
+                    "value": 280
+                },
+                {
+                    "key": "groen glas",
+                    "value": 280
+                },
+                {
+                    "key": "gips",
+                    "value": 262
+                },
+                {
+                    "key": "palissanderhout",
+                    "value": 258
+                },
+                {
+                    "key": "grenenhout",
+                    "value": 256
+                },
+                {
+                    "key": "cellulose nitraat",
+                    "value": 255
+                }
+            ],
+            "name": "material",
+            "otherTerms": 0,
+            "prettyName": 5
+        },
+        {
+            "facets": [
+                {
+                    "key": "etsen",
+                    "value": 180384
+                },
+                {
+                    "key": "graveren (drukprocedé)",
+                    "value": 129433
+                },
+                {
+                    "key": "albuminedruk",
+                    "value": 61628
+                },
+                {
+                    "key": "lithografie (techniek)",
+                    "value": 40868
+                },
+                {
+                    "key": "pen",
+                    "value": 39852
+                },
+                {
+                    "key": "ontwikkelgelatinezilverdruk",
+                    "value": 34488
+                },
+                {
+                    "key": "boekdruk",
+                    "value": 32582
+                },
+                {
+                    "key": "penseel",
+                    "value": 30691
+                },
+                {
+                    "key": "houtsnede",
+                    "value": 25456
+                },
+                {
+                    "key": "lichtdruk",
+                    "value": 21241
+                },
+                {
+                    "key": "schrijven",
+                    "value": 19935
+                },
+                {
+                    "key": "met de hand kleuren",
+                    "value": 18956
+                },
+                {
+                    "key": "plaattoon",
+                    "value": 16173
+                },
+                {
+                    "key": "slaan",
+                    "value": 13401
+                },
+                {
+                    "key": "droge naald",
+                    "value": 12658
+                },
+                {
+                    "key": "drukken",
+                    "value": 9735
+                },
+                {
+                    "key": "autotypie",
+                    "value": 8961
+                },
+                {
+                    "key": "houtgravure",
+                    "value": 8648
+                },
+                {
+                    "key": "fotografie",
+                    "value": 8496
+                },
+                {
+                    "key": "daglichtcollodiumzilverdruk",
+                    "value": 8258
+                },
+                {
+                    "key": "aquatint",
+                    "value": 8187
+                },
+                {
+                    "key": "stippelwerk",
+                    "value": 8091
+                },
+                {
+                    "key": "kleurenlithografie (procedé)",
+                    "value": 8044
+                },
+                {
+                    "key": "mezzotint",
+                    "value": 7573
+                },
+                {
+                    "key": "daglichtgelatinezilverdruk",
+                    "value": 7175
+                },
+                {
+                    "key": "bakken",
+                    "value": 7059
+                },
+                {
+                    "key": "glazuren",
+                    "value": 6809
+                },
+                {
+                    "key": "vergulden",
+                    "value": 6667
+                },
+                {
+                    "key": "draaiend bewerken",
+                    "value": 6524
+                },
+                {
+                    "key": "schilderen",
+                    "value": 6386
+                },
+                {
+                    "key": "plakken",
+                    "value": 6285
+                },
+                {
+                    "key": "cliché",
+                    "value": 5155
+                },
+                {
+                    "key": "kleuren",
+                    "value": 4933
+                },
+                {
+                    "key": "Woodburytypie",
+                    "value": 4826
+                },
+                {
+                    "key": "kleurenhoutsnede",
+                    "value": 4430
+                },
+                {
+                    "key": "staalgravure",
+                    "value": 4147
+                },
+                {
+                    "key": "toonlithografie",
+                    "value": 4132
+                },
+                {
+                    "key": "emailleren",
+                    "value": 3912
+                },
+                {
+                    "key": "heliogravure",
+                    "value": 3863
+                },
+                {
+                    "key": "schildertechniek",
+                    "value": 3610
+                },
+                {
+                    "key": "gieten",
+                    "value": 3514
+                },
+                {
+                    "key": "weven",
+                    "value": 3023
+                },
+                {
+                    "key": "vormen",
+                    "value": 2968
+                },
+                {
+                    "key": "roulette",
+                    "value": 2728
+                },
+                {
+                    "key": "kleurendruk",
+                    "value": 2486
+                },
+                {
+                    "key": "snijden",
+                    "value": 2369
+                },
+                {
+                    "key": "diapositief",
+                    "value": 2285
+                },
+                {
+                    "key": "graveren (inkerven)",
+                    "value": 2193
+                },
+                {
+                    "key": "Polaroid",
+                    "value": 2184
+                },
+                {
+                    "key": "damast",
+                    "value": 2104
+                },
+                {
+                    "key": "stippelets",
+                    "value": 1994
+                },
+                {
+                    "key": "kloskant",
+                    "value": 1805
+                },
+                {
+                    "key": "chromogene druk",
+                    "value": 1803
+                },
+                {
+                    "key": "tekenen",
+                    "value": 1688
+                },
+                {
+                    "key": "zoutdruk",
+                    "value": 1628
+                },
+                {
+                    "key": "borduren",
+                    "value": 1610
+                },
+                {
+                    "key": "stippelgravure",
+                    "value": 1602
+                },
+                {
+                    "key": "rotogravure",
+                    "value": 1573
+                },
+                {
+                    "key": "fotolithografie",
+                    "value": 1539
+                },
+                {
+                    "key": "prenttekening",
+                    "value": 1477
+                },
+                {
+                    "key": "machinale druk",
+                    "value": 1424
+                },
+                {
+                    "key": "linoleumsnede",
+                    "value": 1402
+                },
+                {
+                    "key": "glasblazen",
+                    "value": 1377
+                },
+                {
+                    "key": "offsetdrukken",
+                    "value": 1238
+                },
+                {
+                    "key": "cyanotypie",
+                    "value": 1222
+                },
+                {
+                    "key": "kleur op snee",
+                    "value": 1205
+                },
+                {
+                    "key": "daglichtpapierafdruk",
+                    "value": 1159
+                },
+                {
+                    "key": "zeefdruk in kleur",
+                    "value": 1156
+                },
+                {
+                    "key": "polychromie",
+                    "value": 1123
+                },
+                {
+                    "key": "majolica",
+                    "value": 1072
+                },
+                {
+                    "key": "blinddruk",
+                    "value": 1046
+                },
+                {
+                    "key": "crayonmanier",
+                    "value": 1039
+                },
+                {
+                    "key": "stempelen",
+                    "value": 968
+                },
+                {
+                    "key": "satijnbinding",
+                    "value": 963
+                },
+                {
+                    "key": "Abklatsch",
+                    "value": 952
+                },
+                {
+                    "key": "blokdruk",
+                    "value": 923
+                },
+                {
+                    "key": "kooldruk",
+                    "value": 912
+                },
+                {
+                    "key": "vernis mou",
+                    "value": 905
+                },
+                {
+                    "key": "doezelen",
+                    "value": 890
+                },
+                {
+                    "key": "pochoir",
+                    "value": 890
+                },
+                {
+                    "key": "smeden",
+                    "value": 880
+                },
+                {
+                    "key": "collage",
+                    "value": 780
+                },
+                {
+                    "key": "pellenweefsel",
+                    "value": 770
+                },
+                {
+                    "key": "zeefdrukken",
+                    "value": 770
+                },
+                {
+                    "key": "matte daglichtcollodiumzilverdruk",
+                    "value": 763
+                },
+                {
+                    "key": "clair-obscur-houtsnede",
+                    "value": 755
+                },
+                {
+                    "key": "inkjetdruk",
+                    "value": 749
+                },
+                {
+                    "key": "gelatinezilverdia",
+                    "value": 725
+                },
+                {
+                    "key": "boekbinden",
+                    "value": 715
+                },
+                {
+                    "key": "reliëf",
+                    "value": 704
+                },
+                {
+                    "key": "kleurenautotypie",
+                    "value": 700
+                },
+                {
+                    "key": "naaldkant",
+                    "value": 688
+                },
+                {
+                    "key": "lakken",
+                    "value": 680
+                },
+                {
+                    "key": "kant (techniek)",
+                    "value": 673
+                },
+                {
+                    "key": "à la poupée",
+                    "value": 666
+                },
+                {
+                    "key": "perforeren",
+                    "value": 658
+                },
+                {
+                    "key": "drijven",
+                    "value": 597
+                },
+                {
+                    "key": "Autochrome",
+                    "value": 588
+                },
+                {
+                    "key": "verven",
+                    "value": 572
+                },
+                {
+                    "key": "zinkografie",
+                    "value": 568
+                }
+            ],
+            "name": "technique",
+            "otherTerms": 0,
+            "prettyName": 8
+        },
+        {
+            "facets": [
+                {
+                    "key": " #737C84",
+                    "value": 61822
+                },
+                {
+                    "key": "#FBF6E1",
+                    "value": 47488
+                },
+                {
+                    "key": " #2F4F4F",
+                    "value": 40930
+                },
+                {
+                    "key": " #E0CC91",
+                    "value": 36716
+                },
+                {
+                    "key": " #FBF6E1",
+                    "value": 22798
+                },
+                {
+                    "key": " #000000",
+                    "value": 22746
+                },
+                {
+                    "key": " #B5BFCC",
+                    "value": 13020
+                },
+                {
+                    "key": "#737C84",
+                    "value": 12153
+                },
+                {
+                    "key": " #B35A1F",
+                    "value": 8500
+                },
+                {
+                    "key": "#E0CC91",
+                    "value": 8177
+                },
+                {
+                    "key": " #F6ECF3",
+                    "value": 7681
+                },
+                {
+                    "key": "#000000",
+                    "value": 3297
+                },
+                {
+                    "key": "#B5BFCC",
+                    "value": 3066
+                },
+                {
+                    "key": "#F6ECF3",
+                    "value": 2035
+                },
+                {
+                    "key": " #981313",
+                    "value": 1896
+                },
+                {
+                    "key": " #F49B7A",
+                    "value": 1702
+                },
+                {
+                    "key": "#2F4F4F",
+                    "value": 1438
+                },
+                {
+                    "key": " #DDA5AA",
+                    "value": 1059
+                },
+                {
+                    "key": " #E09714",
+                    "value": 846
+                },
+                {
+                    "key": "#B35A1F",
+                    "value": 743
+                },
+                {
+                    "key": " #367614",
+                    "value": 716
+                },
+                {
+                    "key": " #4019B1",
+                    "value": 698
+                },
+                {
+                    "key": " #4279DB",
+                    "value": 695
+                },
+                {
+                    "key": " #DE4153",
+                    "value": 325
+                },
+                {
+                    "key": " #62AD77",
+                    "value": 238
+                },
+                {
+                    "key": " #8268DC",
+                    "value": 219
+                },
+                {
+                    "key": " #850085",
+                    "value": 189
+                },
+                {
+                    "key": "#981313",
+                    "value": 186
+                },
+                {
+                    "key": "#DDA5AA",
+                    "value": 139
+                },
+                {
+                    "key": " #DF4C93",
+                    "value": 117
+                },
+                {
+                    "key": " #FFEB00",
+                    "value": 94
+                },
+                {
+                    "key": "#4279DB",
+                    "value": 75
+                }
+            ],
+            "name": "normalized32Colors.hex",
+            "otherTerms": 302291,
+            "prettyName": 9
+        }
+    ]
+}
