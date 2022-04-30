@@ -7,10 +7,10 @@ import retrofit2.http.GET
 import retrofit2.http.Path
 import retrofit2.http.Query
 
-interface CollectionAPIService {
+interface ArtObjectAPIService {
 
     @GET("/api/{culture}/collection")
-    suspend fun getTopCollections(
+    suspend fun getTopArtObject(
     @Path("culture") language: String,
     @Query("key") key: String = BuildConfig.API_KEY
     ): Response<APIResponse>

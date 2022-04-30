@@ -12,14 +12,14 @@ import org.junit.Test
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-class CollectionAPIServiceTest {
-    private lateinit var service: CollectionAPIService
+class ArtObjectAPIServiceTest {
+    private lateinit var service: ArtObjectAPIService
     private lateinit var server: MockWebServer
 
     @Before
     fun setUp() {
         server = MockWebServer()
-        service = Retrofit.Builder().baseUrl(server.url("")).addConverterFactory(GsonConverterFactory.create()).build().create(CollectionAPIService::class.java)
+        service = Retrofit.Builder().baseUrl(server.url("")).addConverterFactory(GsonConverterFactory.create()).build().create(ArtObjectAPIService::class.java)
     }
 
     @After
@@ -41,7 +41,7 @@ class CollectionAPIServiceTest {
     fun getCollections_sentRequest_receivedExpected(){
         runBlocking{
             enqueueMockResponse("collectionresponse.json")
-            val responseBody = service.getTopCollections("en")
+            val responseBody = service.getTopArtObject("en")
             val request = server.takeRequest()
             assertThat(responseBody).isNotNull()
             assertThat(request.path).contains("/api/en/collection?key=")
@@ -53,7 +53,7 @@ class CollectionAPIServiceTest {
     fun getCollections_receivedResponse_correctContent(){
         runBlocking{
             enqueueMockResponse("collectionresponse.json")
-            val responseBody = service.getTopCollections("en").body()
+            val responseBody = service.getTopArtObject("en").body()
             val artList = responseBody!!.artObjects
             val art = artList[0]
             assertThat(art.principalOrFirstMaker).isEqualTo("Abraham Roentgen")
