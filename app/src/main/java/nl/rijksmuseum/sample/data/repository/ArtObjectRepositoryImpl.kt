@@ -10,8 +10,12 @@ import retrofit2.Response
 
 class ArtObjectRepositoryImpl(private val artObjectRemoteDataSource: ArtObjectRemoteDataSource
 ) : ArtObjectRepository{
-    override suspend fun getArtObject(language : String): Resource<APIResponse> {
-        return responseToResource(artObjectRemoteDataSource.getTopArtObject(language))
+    override suspend fun getArtObject(language : String,
+                                      pageRange: Int,
+                                      page : Int): Resource<APIResponse> {
+        return responseToResource(artObjectRemoteDataSource.getTopArtObject(language=language,
+            pageRange=pageRange,
+            page=page))
     }
 
     private fun responseToResource(response:Response<APIResponse>) :Resource<APIResponse>{

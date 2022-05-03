@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/artObjectFragment">
+
+    <fragment
+        android:id="@+id/artObjectFragment"
+        android:name="nl.rijksmuseum.sample.ArtObjectFragment"
+        android:label="fragment_art_object"
+        tools:layout="@layout/fragment_art_object" >
+        <action
+            android:id="@+id/action_artObjectFragment_to_savedFragment"
+            app:destination="@id/savedFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/savedFragment"
+        android:name="nl.rijksmuseum.sample.SavedFragment"
+        android:label="fragment_saved"
+        tools:layout="@layout/fragment_saved" />
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="nl.rijksmuseum.sample.InfoFragment"
+        android:label="fragment_info"
+        tools:layout="@layout/fragment_info" >
+        <action
+            android:id="@+id/action_infoFragment_to_savedFragment"
+            app:destination="@id/savedFragment" />
+    </fragment>
+</navigation>

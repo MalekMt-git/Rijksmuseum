@@ -10,7 +10,8 @@ class ArtObjectViewModelFactory(
     private val getArtObjectUseCase: GetArtObjectUseCase
 ) : ViewModelProvider.Factory {
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
-        return super.create(modelClass)
+        return ArtObjectViewModel(
+            app, getArtObjectUseCase
+        ) as T
     }
-
 }
