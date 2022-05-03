@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/artObjectFragment"
+        android:icon="@drawable/ic_baseline_view_list_24"
+        android:title="Art objects" />
+    <item
+        android:id="@+id/savedFragment"
+        android:icon="@drawable/ic_baseline_save_24"
+        android:title="Saved art objects" />
+</menu>

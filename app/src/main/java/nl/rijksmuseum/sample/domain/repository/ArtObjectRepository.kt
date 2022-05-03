@@ -7,7 +7,9 @@ import nl.rijksmuseum.sample.data.util.Resource
 
 interface ArtObjectRepository {
 
-    suspend fun getArtObject(language : String) : Resource<APIResponse>
+    suspend fun getArtObject(language : String,
+                             pageRange: Int,
+                             page : Int) : Resource<APIResponse>
     suspend fun getSearchedArtObject(searchQuery: String) : Resource<APIResponse>
     suspend fun saveArtObject(artObject: ArtObject)
     suspend fun deleteSavedArtObject(artObject: ArtObject)

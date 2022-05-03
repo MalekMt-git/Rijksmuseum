@@ -12,6 +12,8 @@ interface ArtObjectAPIService {
     @GET("/api/{culture}/collection")
     suspend fun getTopArtObject(
     @Path("culture") language: String,
-    @Query("key") key: String = BuildConfig.API_KEY
+    @Query("key") key: String = BuildConfig.API_KEY,
+    @Query("ps") pageRange: Int,
+    @Query("p") page: Int,
     ): Response<APIResponse>
 }

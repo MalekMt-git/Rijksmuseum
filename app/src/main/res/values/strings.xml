@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Rijksmuseum</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="main_article_picture">Main picture</string>
+    <string name="second_article_picture_top">Second article picture top</string>
+    <string name="third_articles_picture_bottom">Third article picture bottom</string>
+    <string name="artist_name">Artist name</string>
+    <string name="art_name">Art name</string>
 </resources>

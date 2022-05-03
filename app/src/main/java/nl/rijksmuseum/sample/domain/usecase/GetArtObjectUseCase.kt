@@ -5,7 +5,11 @@ import nl.rijksmuseum.sample.data.util.Resource
 import nl.rijksmuseum.sample.domain.repository.ArtObjectRepository
 
 class GetArtObjectUseCase(private val artObjectRepository: ArtObjectRepository) {
-    suspend fun execute(language : String): Resource<APIResponse>{
-        return artObjectRepository.getArtObject(language)
+    suspend fun execute(language : String,
+                        pageRange: Int,
+                        page : Int): Resource<APIResponse>{
+        return artObjectRepository.getArtObject(language=language,
+        pageRange=pageRange,
+        page=page)
     }
 }

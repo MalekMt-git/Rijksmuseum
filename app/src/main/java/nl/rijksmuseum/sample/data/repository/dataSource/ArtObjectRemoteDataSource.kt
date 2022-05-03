@@ -4,5 +4,7 @@ import nl.rijksmuseum.sample.data.model.APIResponse
 import retrofit2.Response
 
 interface ArtObjectRemoteDataSource {
-    suspend fun getTopArtObject(language : String):Response<APIResponse>
+    suspend fun getTopArtObject(language : String,
+                                pageRange: Int,
+                                page : Int):Response<APIResponse>
 }

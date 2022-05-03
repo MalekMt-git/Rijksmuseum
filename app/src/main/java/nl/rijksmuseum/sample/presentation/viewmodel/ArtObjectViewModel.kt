@@ -18,14 +18,17 @@ class ArtObjectViewModel(
     private val app:Application,
     private val getArtObjectUseCase: GetArtObjectUseCase
 ) : AndroidViewModel(app) {
-    private val artObject : MutableLiveData<Resource<APIResponse>> = MutableLiveData()
-
-    fun getArtObjects(language: String) = viewModelScope.launch(Dispatchers.IO){
+    val artObject : MutableLiveData<Resource<APIResponse>> = MutableLiveData()
+    fun getArtObjects(language : String = "en",
+                      pageRange: Int = 100,
+                      page : Int = 1) = viewModelScope.launch(Dispatchers.IO){
         try {
             if (isNetworkAvailable(app)){
                 artObject.postValue(Resource.Loading())
             }
-            val apiResult = getArtObjectUseCase.execute(language)
+            val apiResult = getArtObjectUseCase.execute(language=language,
+                pageRange=pageRange,
+                page=page)
             artObject.postValue(apiResult)
         } catch (e:Exception){
             artObject.postValue(Resource.Error(e.message.toString()))
@@ -57,6 +60,5 @@ class ArtObjectViewModel(
             }
         }
         return false
-
     }
 }
