@@ -1,4 +1,4 @@
-package nl.rijksmuseum.sample
+package nl.rijksmuseum.sample.presentation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -6,6 +6,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
 import dagger.hilt.android.AndroidEntryPoint
+import nl.rijksmuseum.sample.R
 import nl.rijksmuseum.sample.databinding.ActivityMainBinding
 import nl.rijksmuseum.sample.presentation.adapter.ArtObjectAdapter
 import nl.rijksmuseum.sample.presentation.viewmodel.ArtObjectViewModel

@@ -1,14 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".InfoFragment">
+    tools:context=".presentation.fragment.InfoFragment"
+    android:background="@color/background_primary"
+    android:orientation="vertical">
 
-    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/main_art_picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="30dp"
+        tools:srcCompat="@tools:sample/avatars"
+        android:contentDescription="@string/main_article_picture" />
+
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Info Fragment" />
+        android:id="@+id/header_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:text="Desk, Abraham Roentgen, c. 1758 - c. 1760"/>
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/header_body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="40dp"
+        android:layout_gravity="center_horizontal"
+        android:text="This desk has numerous hidden compartments and drawers and even includes a folding kneeling bench. It was made for Johann Philipp von Walderdorff, Archbishop and Elector of Trier, and is embellished at the top with his portrait and coat of arms. This desk is the greatest showpiece ever made by Abraham Roentgen – the most famous German cabinetmaker of his time."/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:paddingHorizontal="40dp"
+        android:paddingVertical="20dp"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

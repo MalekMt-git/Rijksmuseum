@@ -41,7 +41,7 @@ class ArtObjectAPIServiceTest {
     fun getCollections_sentRequest_receivedExpected(){
         runBlocking{
             enqueueMockResponse("collectionresponse.json")
-            val responseBody = service.getTopArtObject("en")
+            val responseBody = service.getTopArtObject(language = "en", page = 1, pageRange = 10)
             val request = server.takeRequest()
             assertThat(responseBody).isNotNull()
             assertThat(request.path).contains("/api/en/collection?key=")
@@ -53,7 +53,7 @@ class ArtObjectAPIServiceTest {
     fun getCollections_receivedResponse_correctContent(){
         runBlocking{
             enqueueMockResponse("collectionresponse.json")
-            val responseBody = service.getTopArtObject("en").body()
+            val responseBody = service.getTopArtObject(language = "en", page = 1, pageRange = 10).body()
             val artList = responseBody!!.artObjects
             val art = artList[0]
             assertThat(art.principalOrFirstMaker).isEqualTo("Abraham Roentgen")

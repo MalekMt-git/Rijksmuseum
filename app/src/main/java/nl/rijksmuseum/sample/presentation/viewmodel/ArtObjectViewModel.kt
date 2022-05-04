@@ -10,7 +10,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
-import nl.rijksmuseum.sample.data.model.APIResponse
+import nl.rijksmuseum.sample.data.model.headline.APIResponse
 import nl.rijksmuseum.sample.data.util.Resource
 import nl.rijksmuseum.sample.domain.usecase.GetArtObjectUseCase
 
@@ -19,9 +19,9 @@ class ArtObjectViewModel(
     private val getArtObjectUseCase: GetArtObjectUseCase
 ) : AndroidViewModel(app) {
     val artObject : MutableLiveData<Resource<APIResponse>> = MutableLiveData()
-    fun getArtObjects(language : String = "en",
-                      pageRange: Int = 100,
-                      page : Int = 1) = viewModelScope.launch(Dispatchers.IO){
+    fun getArtObjects(language : String,
+                      pageRange: Int,
+                      page : Int) = viewModelScope.launch(Dispatchers.IO){
         try {
             if (isNetworkAvailable(app)){
                 artObject.postValue(Resource.Loading())

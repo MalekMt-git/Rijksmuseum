@@ -1,8 +1,7 @@
 package nl.rijksmuseum.sample.data.repository.dataSourceImpl
 
-import android.print.PageRange
 import nl.rijksmuseum.sample.data.api.ArtObjectAPIService
-import nl.rijksmuseum.sample.data.model.APIResponse
+import nl.rijksmuseum.sample.data.model.headline.APIResponse
 import nl.rijksmuseum.sample.data.repository.dataSource.ArtObjectRemoteDataSource
 import retrofit2.Response
 

@@ -1,8 +1,8 @@
 package nl.rijksmuseum.sample.domain.repository
 
 import kotlinx.coroutines.flow.Flow
-import nl.rijksmuseum.sample.data.model.APIResponse
-import nl.rijksmuseum.sample.data.model.ArtObject
+import nl.rijksmuseum.sample.data.model.headline.APIResponse
+import nl.rijksmuseum.sample.data.model.headline.ArtObject
 import nl.rijksmuseum.sample.data.util.Resource
 
 interface ArtObjectRepository {

@@ -1,7 +1,7 @@
 package nl.rijksmuseum.sample.data.api
 
 import nl.rijksmuseum.sample.BuildConfig
-import nl.rijksmuseum.sample.data.model.APIResponse
+import nl.rijksmuseum.sample.data.model.headline.APIResponse
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Path
