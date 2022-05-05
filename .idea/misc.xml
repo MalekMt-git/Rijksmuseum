@@ -8,6 +8,9 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.23697916666666666" />
         <entry key="app/src/main/res/layout/art_object_list_item.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_art_object.xml" value="0.23697916666666666" />
+        <entry key="app/src/main/res/layout/fragment_art_objects.xml" value="0.14114583333333333" />
+        <entry key="app/src/main/res/layout/fragment_detail.xml" value="0.303125" />
+        <entry key="app/src/main/res/layout/fragment_details.xml" value="0.14114583333333333" />
         <entry key="app/src/main/res/layout/fragment_info.xml" value="0.33" />
         <entry key="app/src/main/res/layout/fragment_saved.xml" value="0.23697916666666666" />
         <entry key="app/src/main/res/layout/table.xml" value="0.33" />

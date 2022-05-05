@@ -13,14 +13,14 @@ import androidx.recyclerview.widget.RecyclerView
 import nl.rijksmuseum.sample.presentation.MainActivity
 import nl.rijksmuseum.sample.R
 import nl.rijksmuseum.sample.data.util.Resource
-import nl.rijksmuseum.sample.databinding.FragmentArtObjectBinding
-import nl.rijksmuseum.sample.presentation.adapter.ArtObjectAdapter
+import nl.rijksmuseum.sample.databinding.FragmentArtObjectsBinding
+import nl.rijksmuseum.sample.presentation.adapter.ArtObjectsAdapter
 import nl.rijksmuseum.sample.presentation.viewmodel.ArtObjectViewModel
 
-class ArtObjectFragment : Fragment() {
+class ArtObjectsFragment : Fragment() {
     private lateinit var viewModel: ArtObjectViewModel
-    private lateinit var artObjectAdapter: ArtObjectAdapter
-    private lateinit var fragmentArtObjectBinding:FragmentArtObjectBinding
+    private lateinit var artObjectsAdapter: ArtObjectsAdapter
+    private lateinit var fragmentArtObjectsBinding: FragmentArtObjectsBinding
     private val language = "en"
     private var pageRange = 10
     private var page = 1
@@ -33,17 +33,18 @@ class ArtObjectFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_art_object, container, false)
+        return inflater.inflate(R.layout.fragment_art_objects, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        fragmentArtObjectBinding = FragmentArtObjectBinding.bind(view)
-        viewModel= (activity as MainActivity).viewModel
-        artObjectAdapter = (activity as MainActivity).artObjectAdapter
-        artObjectAdapter.setOnClickListener {
+        fragmentArtObjectsBinding = FragmentArtObjectsBinding.bind(view)
+        viewModel= (activity as MainActivity).artObjectViewModel
+        artObjectsAdapter = (activity as MainActivity).artObjectsAdapter
+        artObjectsAdapter.setOnClickListener {
             val bundle = Bundle().apply {
-                putSerializable("objectNumber", it.objectNumber)
+                putSerializable("objectId", it.objectNumber)
+                putSerializable("language", language)
             }
             findNavController().navigate(
                 R.id.action_artObjectFragment_to_infoFragment,
@@ -61,7 +62,7 @@ class ArtObjectFragment : Fragment() {
                 is Resource.Success ->{
                     hidProgressBar()
                     response.data?.let {
-                        artObjectAdapter.differ.submitList(it.artObjects.toList())
+                        artObjectsAdapter.differ.submitList(it.artObjects.toList())
                         pages = if (it.count % 20 == 0){
                             it.count / 20
                         }else{
@@ -83,19 +84,19 @@ class ArtObjectFragment : Fragment() {
         }
     }
     private fun initRecyclerView() {
-        fragmentArtObjectBinding.rvArtObject.apply {
-            adapter = artObjectAdapter
+        fragmentArtObjectsBinding.rvArtObject.apply {
+            adapter = artObjectsAdapter
             layoutManager = LinearLayoutManager(activity)
-            addOnScrollListener(this@ArtObjectFragment.onScrollListener)
+            addOnScrollListener(this@ArtObjectsFragment.onScrollListener)
         }
     }
     private fun showProgressBar(){
         isLoading = true
-        fragmentArtObjectBinding.progressBar.visibility = View.VISIBLE
+        fragmentArtObjectsBinding.progressBar.visibility = View.VISIBLE
     }
     private fun hidProgressBar(){
         isLoading = false
-        fragmentArtObjectBinding.progressBar.visibility = View.INVISIBLE
+        fragmentArtObjectsBinding.progressBar.visibility = View.GONE
     }
 
     private val onScrollListener = object : RecyclerView.OnScrollListener(){
@@ -108,7 +109,7 @@ class ArtObjectFragment : Fragment() {
 
         override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
             super.onScrolled(recyclerView, dx, dy)
-            val layoutManager = fragmentArtObjectBinding.rvArtObject.layoutManager as LinearLayoutManager
+            val layoutManager = fragmentArtObjectsBinding.rvArtObject.layoutManager as LinearLayoutManager
             val sizeOfCurrentList = layoutManager.itemCount
             val visibleItems = layoutManager.childCount
             val topPosition = layoutManager.findFirstVisibleItemPosition()

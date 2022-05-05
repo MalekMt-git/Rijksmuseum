@@ -9,7 +9,7 @@ import com.bumptech.glide.Glide
 import nl.rijksmuseum.sample.data.model.headline.ArtObject
 import nl.rijksmuseum.sample.databinding.ArtObjectListItemBinding
 
-class ArtObjectAdapter: RecyclerView.Adapter<ArtObjectAdapter.ArtObjectViewHolder>() {
+class ArtObjectsAdapter: RecyclerView.Adapter<ArtObjectsAdapter.ArtObjectViewHolder>() {
 
     private val callback = object : DiffUtil.ItemCallback<ArtObject>(){
 

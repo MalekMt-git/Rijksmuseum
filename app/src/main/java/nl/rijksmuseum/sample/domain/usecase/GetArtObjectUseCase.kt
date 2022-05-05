@@ -8,7 +8,7 @@ class GetArtObjectUseCase(private val artObjectRepository: ArtObjectRepository) 
     suspend fun execute(language : String,
                         pageRange: Int,
                         page : Int): Resource<APIResponse>{
-        return artObjectRepository.getArtObject(language=language,
+        return artObjectRepository.getArtObjects(language=language,
         pageRange=pageRange,
         page=page)
     }

@@ -5,8 +5,10 @@ import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
+import nl.rijksmuseum.sample.domain.usecase.GetArtObjectDetailsUseCase
 import nl.rijksmuseum.sample.domain.usecase.GetArtObjectUseCase
 import nl.rijksmuseum.sample.presentation.viewmodel.ArtObjectViewModelFactory
+import nl.rijksmuseum.sample.presentation.viewmodel.DetailsViewModelFactory
 import javax.inject.Singleton
 
 @Module
@@ -14,8 +16,14 @@ import javax.inject.Singleton
 class FactoryModule {
     @Singleton
     @Provides
-    fun provideNewsViewModelFactory(application: Application,
-    getArtObjectUseCase: GetArtObjectUseCase):ArtObjectViewModelFactory{
+    fun provideArtObjectViewModelFactory(application: Application,
+                                         getArtObjectUseCase: GetArtObjectUseCase):ArtObjectViewModelFactory{
         return ArtObjectViewModelFactory(application,getArtObjectUseCase)
+    }
+    @Singleton
+    @Provides
+    fun provideArtObjectDetailsViewModelFactory(application: Application,
+                                                getArtObjectDetailsUseCase: GetArtObjectDetailsUseCase):DetailsViewModelFactory{
+        return DetailsViewModelFactory(application, getArtObjectDetailsUseCase)
     }
 }

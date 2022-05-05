@@ -8,18 +8,24 @@ import androidx.navigation.ui.setupWithNavController
 import dagger.hilt.android.AndroidEntryPoint
 import nl.rijksmuseum.sample.R
 import nl.rijksmuseum.sample.databinding.ActivityMainBinding
-import nl.rijksmuseum.sample.presentation.adapter.ArtObjectAdapter
+import nl.rijksmuseum.sample.presentation.adapter.ArtObjectsAdapter
+import nl.rijksmuseum.sample.presentation.fragment.DetailsFragment
 import nl.rijksmuseum.sample.presentation.viewmodel.ArtObjectViewModel
 import nl.rijksmuseum.sample.presentation.viewmodel.ArtObjectViewModelFactory
+import nl.rijksmuseum.sample.presentation.viewmodel.DetailsViewModel
+import nl.rijksmuseum.sample.presentation.viewmodel.DetailsViewModelFactory
 import javax.inject.Inject
 
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
     @Inject
-    lateinit var factory: ArtObjectViewModelFactory
+    lateinit var artObjectViewModelFactory: ArtObjectViewModelFactory
     @Inject
-    lateinit var artObjectAdapter: ArtObjectAdapter
-    lateinit var viewModel: ArtObjectViewModel
+    lateinit var detailsViewModelFactory: DetailsViewModelFactory
+    lateinit var artObjectViewModel: ArtObjectViewModel
+    lateinit var detailsViewModel: DetailsViewModel
+    @Inject
+    lateinit var artObjectsAdapter: ArtObjectsAdapter
     private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,6 +37,7 @@ class MainActivity : AppCompatActivity() {
         binding.bnvArtObject.setupWithNavController(
             navController
         )
-        viewModel = ViewModelProvider(this,factory)[ArtObjectViewModel::class.java]
+        artObjectViewModel = ViewModelProvider(this,artObjectViewModelFactory)[ArtObjectViewModel::class.java]
+        detailsViewModel = ViewModelProvider(this,detailsViewModelFactory)[DetailsViewModel::class.java]
     }
 }

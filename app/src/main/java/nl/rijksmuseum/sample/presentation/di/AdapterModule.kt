@@ -4,7 +4,7 @@ import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
-import nl.rijksmuseum.sample.presentation.adapter.ArtObjectAdapter
+import nl.rijksmuseum.sample.presentation.adapter.ArtObjectsAdapter
 import javax.inject.Singleton
 
 @Module
@@ -12,5 +12,5 @@ import javax.inject.Singleton
 class AdapterModule {
     @Singleton
     @Provides
-    fun providerArtObjectAdapter() = ArtObjectAdapter()
+    fun providerArtObjectAdapter() = ArtObjectsAdapter()
 }

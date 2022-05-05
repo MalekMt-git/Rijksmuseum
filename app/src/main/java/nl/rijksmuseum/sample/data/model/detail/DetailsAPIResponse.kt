@@ -3,7 +3,7 @@ package nl.rijksmuseum.sample.data.model.detail
 
 import com.google.gson.annotations.SerializedName
 
-data class DetailAPIRespone(
+data class DetailsAPIResponse(
     @SerializedName("artObject")
     val artObject: ArtObject,
     @SerializedName("artObjectPage")
