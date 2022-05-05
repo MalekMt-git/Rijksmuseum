@@ -5,7 +5,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.navArgs
 import nl.rijksmuseum.sample.R
+import nl.rijksmuseum.sample.databinding.FragmentInfoBinding
 
 class InfoFragment : Fragment() {
 
@@ -18,5 +20,9 @@ class InfoFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        val fragmentInfoBinding = FragmentInfoBinding.bind(view)
+        val args : InfoFragmentArgs by navArgs()
+        val objectNumber = args.objectNumber
+
     }
 }
