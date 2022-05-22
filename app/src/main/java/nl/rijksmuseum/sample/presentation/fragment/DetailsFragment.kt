@@ -8,6 +8,9 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.activity.OnBackPressedCallback
+import androidx.lifecycle.Lifecycle
+import androidx.lifecycle.lifecycleScope
+import androidx.lifecycle.repeatOnLifecycle
 import androidx.navigation.fragment.navArgs
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.DataSource
@@ -15,6 +18,7 @@ import com.bumptech.glide.load.engine.GlideException
 import com.bumptech.glide.manager.SupportRequestManagerFragment
 import com.bumptech.glide.request.RequestListener
 import com.bumptech.glide.request.target.Target
+import kotlinx.coroutines.launch
 import nl.rijksmuseum.sample.R
 import nl.rijksmuseum.sample.data.util.Resource
 import nl.rijksmuseum.sample.databinding.FragmentDetailsBinding
@@ -52,54 +56,67 @@ class DetailsFragment : Fragment() {
 
     private fun viewArtObjectDetails(){
         showProgressBar()
-        viewModel.getArtObjectDetails(objectId, language)
-        viewModel.artObjectDetails.observe(viewLifecycleOwner){response ->
-            when(response){
-                is Resource.Success ->{
-                    response.data?.let {
-                        binding.headerTitle.text = it.artObject.title
-                        binding.headerBody.text = it.artObject.description
 
-                        Glide.with(binding.mainArtPicture.context)
-                            .load(it.artObject.webImage.url)
-                            .listener(object : RequestListener<Drawable>{
-                                override fun onLoadFailed(
-                                    e: GlideException?,
-                                    model: Any?,
-                                    target: Target<Drawable>?,
-                                    isFirstResource: Boolean
-                                ): Boolean {
-                                    hidProgressBar()
-                                    return false
+
+        // Start a coroutine in the lifecycle scope
+        viewLifecycleOwner.lifecycleScope.launch {
+            // repeatOnLifecycle launches the block in a new coroutine every time the
+            // lifecycle is in the STARTED state (or above) and cancels it when it's STOPPED.
+            repeatOnLifecycle(Lifecycle.State.STARTED) {
+                // Trigger the flow and start listening for values.
+                // Note that this happens when lifecycle is STARTED and stops
+                // collecting when the lifecycle is STOPPED
+                viewModel.getArtObjectDetails(objectId, language)
+                viewModel.uiState.collect { uiState ->
+                    // New value received
+                    when(uiState){
+                        is Resource.Success ->{
+                            uiState.data?.let {
+                                binding.headerTitle.text = it.artObject.title
+                                binding.headerBody.text = it.artObject.description
+
+                                Glide.with(binding.mainArtPicture.context)
+                                    .load(it.artObject.webImage.url)
+                                    .listener(object : RequestListener<Drawable>{
+                                        override fun onLoadFailed(
+                                            e: GlideException?,
+                                            model: Any?,
+                                            target: Target<Drawable>?,
+                                            isFirstResource: Boolean
+                                        ): Boolean {
+                                            hidProgressBar()
+                                            return false
+                                        }
+
+                                        override fun onResourceReady(
+                                            resource: Drawable?,
+                                            model: Any?,
+                                            target: Target<Drawable>?,
+                                            dataSource: DataSource?,
+                                            isFirstResource: Boolean
+                                        ): Boolean {
+                                            hidProgressBar()
+                                            return false
+                                        }
+
+                                    })
+                                    .into(binding.mainArtPicture)
+
+                                binding.root.setOnClickListener{
+
                                 }
-
-                                override fun onResourceReady(
-                                    resource: Drawable?,
-                                    model: Any?,
-                                    target: Target<Drawable>?,
-                                    dataSource: DataSource?,
-                                    isFirstResource: Boolean
-                                ): Boolean {
-                                   hidProgressBar()
-                                    return false
-                                }
-
-                            })
-                            .into(binding.mainArtPicture)
-
-                        binding.root.setOnClickListener{
-
+                            }
+                        }
+                        is Resource.Error ->{
+                            hidProgressBar()
+                            uiState.message?.let {
+                                Toast.makeText(activity,"An error occurred : $it", Toast.LENGTH_LONG).show()
+                            }
+                        }
+                        is Resource.Loading ->{
+                            showProgressBar()
                         }
                     }
-                }
-                is Resource.Error ->{
-                    hidProgressBar()
-                    response.message?.let {
-                        Toast.makeText(activity,"An error occurred : $it", Toast.LENGTH_LONG).show()
-                    }
-                }
-                is Resource.Loading ->{
-                    showProgressBar()
                 }
             }
         }
