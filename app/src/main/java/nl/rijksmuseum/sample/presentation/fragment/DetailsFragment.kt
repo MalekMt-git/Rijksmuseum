@@ -18,6 +18,8 @@ import com.bumptech.glide.load.engine.GlideException
 import com.bumptech.glide.manager.SupportRequestManagerFragment
 import com.bumptech.glide.request.RequestListener
 import com.bumptech.glide.request.target.Target
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.launch
 import nl.rijksmuseum.sample.R
 import nl.rijksmuseum.sample.data.util.Resource
@@ -45,33 +47,20 @@ class DetailsFragment : Fragment() {
         val args : DetailsFragmentArgs by navArgs()
         objectId = args.objectId
         language = args.language
+
         showProgressBar()
         viewArtObjectDetails()
     }
 
-    override fun onDestroy() {
-        super.onDestroy()
-    }
-
-
     private fun viewArtObjectDetails(){
         showProgressBar()
-
-
-        // Start a coroutine in the lifecycle scope
         viewLifecycleOwner.lifecycleScope.launch {
-            // repeatOnLifecycle launches the block in a new coroutine every time the
-            // lifecycle is in the STARTED state (or above) and cancels it when it's STOPPED.
             repeatOnLifecycle(Lifecycle.State.STARTED) {
-                // Trigger the flow and start listening for values.
-                // Note that this happens when lifecycle is STARTED and stops
-                // collecting when the lifecycle is STOPPED
                 viewModel.getArtObjectDetails(objectId, language)
-                viewModel.uiState.collect { uiState ->
-                    // New value received
-                    when(uiState){
+                viewModel.artObjectDetails.observe(viewLifecycleOwner) { resource ->
+                    when(resource){
                         is Resource.Success ->{
-                            uiState.data?.let {
+                            resource.data?.let {
                                 binding.headerTitle.text = it.artObject.title
                                 binding.headerBody.text = it.artObject.description
 
@@ -109,7 +98,7 @@ class DetailsFragment : Fragment() {
                         }
                         is Resource.Error ->{
                             hidProgressBar()
-                            uiState.message?.let {
+                            resource.message?.let {
                                 Toast.makeText(activity,"An error occurred : $it", Toast.LENGTH_LONG).show()
                             }
                         }
