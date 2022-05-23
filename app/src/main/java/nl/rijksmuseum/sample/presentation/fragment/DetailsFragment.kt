@@ -76,7 +76,6 @@ class DetailsFragment : Fragment() {
                                             hidProgressBar()
                                             return false
                                         }
-
                                         override fun onResourceReady(
                                             resource: Drawable?,
                                             model: Any?,
@@ -90,7 +89,6 @@ class DetailsFragment : Fragment() {
 
                                     })
                                     .into(binding.mainArtPicture)
-
                                 binding.root.setOnClickListener{
 
                                 }
