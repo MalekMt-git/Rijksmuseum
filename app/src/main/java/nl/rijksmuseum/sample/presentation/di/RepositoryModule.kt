@@ -12,7 +12,6 @@ import javax.inject.Singleton
 @Module
 @InstallIn(SingletonComponent::class)
 class RepositoryModule {
-
     @Singleton
     @Provides
     fun provideArtObjectRepository(artObjectRemoteDataSource: ArtObjectRemoteDataSource): ArtObjectRepository{

@@ -5,6 +5,7 @@ import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import nl.rijksmuseum.sample.domain.repository.ArtObjectRepository
+import nl.rijksmuseum.sample.domain.usecase.GetArtObjectDetailsUseCase
 import nl.rijksmuseum.sample.domain.usecase.GetArtObjectUseCase
 import javax.inject.Singleton
 
@@ -15,5 +16,10 @@ class UseCaseModule {
     @Provides
     fun provideArtObjectsUseCase(artObjectRepository: ArtObjectRepository):GetArtObjectUseCase{
         return GetArtObjectUseCase(artObjectRepository)
+    }
+    @Singleton
+    @Provides
+    fun provideArtObjectDetailsUseCase(artObjectRepository: ArtObjectRepository):GetArtObjectDetailsUseCase{
+        return GetArtObjectDetailsUseCase(artObjectRepository)
     }
 }

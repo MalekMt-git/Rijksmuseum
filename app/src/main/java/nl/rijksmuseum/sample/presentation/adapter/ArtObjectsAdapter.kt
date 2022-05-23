@@ -1,18 +1,15 @@
 package nl.rijksmuseum.sample.presentation.adapter
 
-import android.app.Application
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import nl.rijksmuseum.sample.MainActivity
-import nl.rijksmuseum.sample.data.model.ArtObject
+import nl.rijksmuseum.sample.data.model.headline.ArtObject
 import nl.rijksmuseum.sample.databinding.ArtObjectListItemBinding
-import nl.rijksmuseum.sample.presentation.viewmodel.ArtObjectViewModel
 
-class ArtObjectAdapter: RecyclerView.Adapter<ArtObjectAdapter.ArtObjectViewHolder>() {
+class ArtObjectsAdapter: RecyclerView.Adapter<ArtObjectsAdapter.ArtObjectViewHolder>() {
 
     private val callback = object : DiffUtil.ItemCallback<ArtObject>(){
 
@@ -37,7 +34,19 @@ class ArtObjectAdapter: RecyclerView.Adapter<ArtObjectAdapter.ArtObjectViewHolde
             Glide.with(binding.mainArtPicture.context)
                 .load(artObject.webImage.url)
                 .into(binding.mainArtPicture)
+
+            binding.root.setOnClickListener{
+                onItemClickListener?.let {
+                    it(artObject)
+                }
+            }
         }
+    }
+
+    private var onItemClickListener :((ArtObject)->Unit)?=null
+
+    fun setOnClickListener(listener:(ArtObject)->Unit){
+        onItemClickListener=listener
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ArtObjectViewHolder {
