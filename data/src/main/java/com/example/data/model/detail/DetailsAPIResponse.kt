@@ -1,6 +1,7 @@
-package nl.rijksmuseum.sample.data.model.detail
+package com.example.data.model.detail
 
 
+import com.example.data.model.headline.ArtObject
 import com.google.gson.annotations.SerializedName
 
 data class DetailsAPIResponse(

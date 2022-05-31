@@ -1,13 +1,12 @@
-package nl.rijksmuseum.sample.domain.usecase
+package com.example.domain.usecase
 
-import nl.rijksmuseum.sample.data.model.headline.APIResponse
-import nl.rijksmuseum.sample.data.util.Resource
-import nl.rijksmuseum.sample.domain.repository.ArtObjectRepository
+import com.example.domain.repository.ArtObjectRepository
+
 
 class GetArtObjectUseCase(private val artObjectRepository: ArtObjectRepository) {
-    suspend fun execute(language : String,
+    suspend fun<APIResponse> execute(language : String,
                         pageRange: Int,
-                        page : Int): Resource<APIResponse>{
+                        page : Int): APIResponse{
         return artObjectRepository.getArtObjects(language=language,
         pageRange=pageRange,
         page=page)

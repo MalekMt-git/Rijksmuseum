@@ -1,9 +1,9 @@
-package nl.rijksmuseum.sample.data.repository.dataSourceImpl
+package com.example.data.repository.dataSourceImpl
 
-import nl.rijksmuseum.sample.data.api.ArtObjectAPIService
-import nl.rijksmuseum.sample.data.model.detail.DetailsAPIResponse
-import nl.rijksmuseum.sample.data.model.headline.APIResponse
-import nl.rijksmuseum.sample.data.repository.dataSource.ArtObjectRemoteDataSource
+import com.example.data.api.ArtObjectAPIService
+import com.example.data.model.detail.DetailsAPIResponse
+import com.example.data.model.headline.APIResponse
+import com.example.data.repository.dataSource.ArtObjectRemoteDataSource
 import retrofit2.Response
 
 class ArtObjectRemoteDataSourceImpl(

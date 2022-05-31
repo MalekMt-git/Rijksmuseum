@@ -1,4 +1,4 @@
-package nl.rijksmuseum.sample.data.util
+package com.example.data.util
 
 sealed class Resource<T>(
     val data: T? = null,

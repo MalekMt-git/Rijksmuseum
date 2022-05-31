@@ -1,5 +1,4 @@
-package nl.rijksmuseum.sample.data.model.headline
-
+package com.example.data.model.headline
 
 import com.google.gson.annotations.SerializedName
 

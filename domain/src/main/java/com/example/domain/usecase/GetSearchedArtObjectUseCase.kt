@@ -1,11 +1,9 @@
-package nl.rijksmuseum.sample.domain.usecase
+package com.example.domain.usecase
 
-import nl.rijksmuseum.sample.data.model.headline.APIResponse
-import nl.rijksmuseum.sample.data.util.Resource
-import nl.rijksmuseum.sample.domain.repository.ArtObjectRepository
+import com.example.domain.repository.ArtObjectRepository
 
 class GetSearchedArtObjectUseCase(private val artObjectRepository: ArtObjectRepository) {
-    suspend fun execute(searchQuery: String): Resource<APIResponse> {
+    suspend fun<APIResponse> execute(searchQuery: String): APIResponse {
         return artObjectRepository.getSearchedArtObject(searchQuery)
     }
 }

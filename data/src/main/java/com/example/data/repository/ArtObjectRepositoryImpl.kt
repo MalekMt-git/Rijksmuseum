@@ -1,22 +1,21 @@
-package nl.rijksmuseum.sample.data.repository
+package com.example.data.repository
 
-import kotlinx.coroutines.flow.Flow
-import nl.rijksmuseum.sample.data.model.detail.DetailsAPIResponse
-import nl.rijksmuseum.sample.data.model.headline.APIResponse
-import nl.rijksmuseum.sample.data.model.headline.ArtObject
-import nl.rijksmuseum.sample.data.repository.dataSource.ArtObjectRemoteDataSource
-import nl.rijksmuseum.sample.data.util.Resource
-import nl.rijksmuseum.sample.domain.repository.ArtObjectRepository
+
+import com.example.data.model.headline.APIResponse
+import com.example.data.repository.dataSource.ArtObjectRemoteDataSource
+import com.example.data.util.Resource
+import com.example.domain.repository.ArtObjectRepository
 import retrofit2.Response
 
 class ArtObjectRepositoryImpl(
     private val artObjectRemoteDataSource: ArtObjectRemoteDataSource
 ) : ArtObjectRepository {
-    override suspend fun getArtObjects(
+
+    override suspend fun <Resource> getArtObjects(
         language: String,
         pageRange: Int,
         page: Int
-    ): Resource<APIResponse> {
+    ): resource {
         return responseToResource(
             artObjectRemoteDataSource.getArtObjects(
                 language = language,
@@ -25,6 +24,14 @@ class ArtObjectRepositoryImpl(
             )
         )
     }
+
+//    override suspend fun <Resource : Resource<APIResponse>> getArtObjects(
+//        language: String,
+//        pageRange: Int,
+//        page: Int
+//    ): Resource {
+
+//    }
 
     private fun <T> responseToResource(response: Response<T>): Resource<T> {
         if (response.isSuccessful) {

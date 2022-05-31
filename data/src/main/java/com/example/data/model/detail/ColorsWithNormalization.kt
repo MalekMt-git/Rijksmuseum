@@ -1,4 +1,4 @@
-package nl.rijksmuseum.sample.data.model.detail
+package com.example.data.model.detail
 
 
 import com.google.gson.annotations.SerializedName

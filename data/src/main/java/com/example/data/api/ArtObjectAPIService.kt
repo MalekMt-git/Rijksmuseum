@@ -1,8 +1,9 @@
-package nl.rijksmuseum.sample.data.api
+package com.example.data.api
 
-import nl.rijksmuseum.sample.BuildConfig
-import nl.rijksmuseum.sample.data.model.detail.DetailsAPIResponse
-import nl.rijksmuseum.sample.data.model.headline.APIResponse
+
+import com.example.data.BuildConfig
+import com.example.data.model.detail.DetailsAPIResponse
+import com.example.data.model.headline.APIResponse
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Path
@@ -12,10 +13,10 @@ interface ArtObjectAPIService {
 
     @GET("/api/{culture}/collection")
     suspend fun getArtObjects(
-    @Path("culture") language: String,
-    @Query("key") key: String = BuildConfig.API_KEY,
-    @Query("ps") pageRange: Int,
-    @Query("p") page: Int,
+        @Path("culture") language: String,
+        @Query("key") key: String = BuildConfig.API_KEY,
+        @Query("ps") pageRange: Int,
+        @Query("p") page: Int,
     ): Response<APIResponse>
 
     @GET("/api/{culture}/collection/{objectId}")

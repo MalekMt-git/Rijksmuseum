@@ -1,4 +1,4 @@
-package nl.rijksmuseum.sample.data.repository.dataSource
+package com.example.data.repository.dataSource
 
 import nl.rijksmuseum.sample.data.model.detail.DetailsAPIResponse
 import nl.rijksmuseum.sample.data.model.headline.APIResponse
