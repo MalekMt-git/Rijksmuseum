@@ -1,18 +1,9 @@
 package com.example.data.model.detail
 
-import com.example.domain.model.detail.Classification
-import com.example.domain.model.detail.Color
-import com.example.domain.model.detail.ColorsWithNormalization
-import com.example.domain.model.detail.Dating
-import com.example.domain.model.detail.Dimension
-import com.example.domain.model.detail.Label
-import com.example.domain.model.detail.Links
-import com.example.domain.model.detail.Normalized32Color
-import com.example.domain.model.detail.NormalizedColor
-import com.example.domain.model.detail.PrincipalMaker
+
 import com.google.gson.annotations.SerializedName
 
-data class ArtObject(
+data class DetailsArtObjectImpl(
     @SerializedName("acquisition")
     override val acquisition: Acquisition,
     @SerializedName("artistRole")
@@ -103,6 +94,5 @@ data class ArtObject(
     override val title: String,
     @SerializedName("titles")
     override val titles: List<String>,
-    @SerializedName("webImage")
-    override val webImage: com.example.domain.model.detail.WebImage
-) : com.example.domain.model.detail.ArtObject
+    @SerializedName("webImage") override val webImage: WebImageImpl
+) : com.example.domain.model.detail.DetailsArtObject

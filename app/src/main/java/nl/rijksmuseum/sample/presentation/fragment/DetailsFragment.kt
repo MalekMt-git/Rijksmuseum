@@ -57,11 +57,11 @@ class DetailsFragment : Fragment() {
                     when(resource){
                         is Resource.Success ->{
                             resource.data?.let {
-                                binding.headerTitle.text = it.artObject.title
-                                binding.headerBody.text = it.artObject.description
+                                binding.headerTitle.text = it.detailsArtObject.title
+                                binding.headerBody.text = it.detailsArtObject.description
 
                                 Glide.with(binding.mainArtPicture.context)
-                                    .load(it.artObject.webImage.url)
+                                    .load(it.detailsArtObject.webImage.url)
                                     .listener(object : RequestListener<Drawable>{
                                         override fun onLoadFailed(
                                             e: GlideException?,

@@ -1,6 +1,6 @@
 package com.example.domain.model.detail
 
-interface ArtObject{
+interface DetailsArtObject{
     val acquisition: Acquisition
     val artistRole: Any?
     val associations: List<Any>

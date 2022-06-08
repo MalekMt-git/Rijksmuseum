@@ -13,7 +13,7 @@ import org.junit.Test
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-class ArtObjectAPIServiceTest {
+class DetailsArtObjectImplAPIServiceTest {
     private lateinit var service: ArtObjectAPIService
     private lateinit var server: MockWebServer
 

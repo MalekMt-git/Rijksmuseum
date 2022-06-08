@@ -4,7 +4,7 @@ package com.example.data.model.detail
 import com.example.domain.model.detail.WebImage
 import com.google.gson.annotations.SerializedName
 
-data class WebImage(
+data class WebImageImpl(
     @SerializedName("guid")
     override val guid: String,
     @SerializedName("height")

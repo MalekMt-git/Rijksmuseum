@@ -1,7 +1,7 @@
 package com.example.domain.model.detail
 
 interface DetailsAPIResponse{
-    val artObject: ArtObject
+    val detailsArtObject: DetailsArtObject
     val artObjectPage: ArtObjectPage
     val elapsedMilliseconds: Int
 }
