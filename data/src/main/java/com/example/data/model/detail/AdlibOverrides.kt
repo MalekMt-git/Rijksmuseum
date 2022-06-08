@@ -1,13 +1,14 @@
 package com.example.data.model.detail
 
 
+import com.example.domain.model.detail.AdlibOverrides
 import com.google.gson.annotations.SerializedName
 
 data class AdlibOverrides(
     @SerializedName("etiketText")
-    val etiketText: Any?,
+    override val etiketText: Any?,
     @SerializedName("maker")
-    val maker: Any?,
+    override val maker: Any?,
     @SerializedName("titel")
-    val titel: Any?
-)
+    override val titel: Any?
+) : AdlibOverrides

@@ -1,7 +1,7 @@
 package com.example.data.repository.dataSource
 
-import nl.rijksmuseum.sample.data.model.detail.DetailsAPIResponse
-import nl.rijksmuseum.sample.data.model.headline.APIResponse
+import com.example.domain.model.detail.DetailsAPIResponse
+import com.example.domain.model.headline.APIResponse
 import retrofit2.Response
 
 interface ArtObjectRemoteDataSource {
@@ -9,10 +9,10 @@ interface ArtObjectRemoteDataSource {
         language: String,
         pageRange: Int,
         page: Int
-    ): Response<APIResponse>
+    ): Response<out APIResponse>
 
     suspend fun getArtObjectDetails(
         objectId: String,
         language: String
-    ): Response<DetailsAPIResponse>
+    ): Response< out DetailsAPIResponse>
 }

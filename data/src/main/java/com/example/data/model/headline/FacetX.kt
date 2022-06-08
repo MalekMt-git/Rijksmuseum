@@ -1,11 +1,12 @@
 package com.example.data.model.headline
 
 
+import com.example.domain.model.headline.FacetX
 import com.google.gson.annotations.SerializedName
 
 data class FacetX(
     @SerializedName("key")
-    val key: String,
+    override val key: String,
     @SerializedName("value")
-    val value: Int
-)
+    override val value: Int
+) : FacetX

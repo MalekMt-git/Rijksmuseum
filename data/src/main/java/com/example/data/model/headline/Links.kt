@@ -1,11 +1,12 @@
 package com.example.data.model.headline
 
 
+import com.example.domain.model.headline.Links
 import com.google.gson.annotations.SerializedName
 
 data class Links(
     @SerializedName("self")
-    val self: String,
+    override val self: String,
     @SerializedName("web")
-    val web: String
-)
+    override val web: String
+) : Links

@@ -1,99 +1,108 @@
 package com.example.data.model.detail
 
-
+import com.example.domain.model.detail.Classification
+import com.example.domain.model.detail.Color
+import com.example.domain.model.detail.ColorsWithNormalization
+import com.example.domain.model.detail.Dating
+import com.example.domain.model.detail.Dimension
+import com.example.domain.model.detail.Label
+import com.example.domain.model.detail.Links
+import com.example.domain.model.detail.Normalized32Color
+import com.example.domain.model.detail.NormalizedColor
+import com.example.domain.model.detail.PrincipalMaker
 import com.google.gson.annotations.SerializedName
 
 data class ArtObject(
     @SerializedName("acquisition")
-    val acquisition: Acquisition,
+    override val acquisition: Acquisition,
     @SerializedName("artistRole")
-    val artistRole: Any?,
+    override val artistRole: Any?,
     @SerializedName("associations")
-    val associations: List<Any>,
+    override val associations: List<Any>,
     @SerializedName("catRefRPK")
-    val catRefRPK: List<Any>,
+    override val catRefRPK: List<Any>,
     @SerializedName("classification")
-    val classification: Classification,
+    override val classification: Classification,
     @SerializedName("colors")
-    val colors: List<Color>,
+    override val colors: List<Color>,
     @SerializedName("colorsWithNormalization")
-    val colorsWithNormalization: List<ColorsWithNormalization>,
+    override val colorsWithNormalization: List<ColorsWithNormalization>,
     @SerializedName("copyrightHolder")
-    val copyrightHolder: Any?,
+    override val copyrightHolder: Any?,
     @SerializedName("dating")
-    val dating: Dating,
+    override val dating: Dating,
     @SerializedName("description")
-    val description: String,
+    override val description: String,
     @SerializedName("dimensions")
-    val dimensions: List<Dimension>,
+    override val dimensions: List<Dimension>,
     @SerializedName("documentation")
-    val documentation: List<String>,
+    override val documentation: List<String>,
     @SerializedName("exhibitions")
-    val exhibitions: List<Any>,
+    override val exhibitions: List<Any>,
     @SerializedName("hasImage")
-    val hasImage: Boolean,
+    override val hasImage: Boolean,
     @SerializedName("historicalPersons")
-    val historicalPersons: List<String>,
+    override val historicalPersons: List<String>,
     @SerializedName("id")
-    val id: String,
+    override val id: String,
     @SerializedName("inscriptions")
-    val inscriptions: List<Any>,
+    override val inscriptions: List<Any>,
     @SerializedName("label")
-    val label: Label,
+    override val label: Label,
     @SerializedName("labelText")
-    val labelText: Any?,
+    override val labelText: Any?,
     @SerializedName("language")
-    val language: String,
+    override val language: String,
     @SerializedName("links")
-    val links: Links,
+    override val links: Links,
     @SerializedName("location")
-    val location: String,
+    override val location: String,
     @SerializedName("longTitle")
-    val longTitle: String,
+    override val longTitle: String,
     @SerializedName("makers")
-    val makers: List<Any>,
+    override val makers: List<Any>,
     @SerializedName("materials")
-    val materials: List<String>,
+    override val materials: List<String>,
     @SerializedName("normalized32Colors")
-    val normalized32Colors: List<Normalized32Color>,
+    override val normalized32Colors: List<Normalized32Color>,
     @SerializedName("normalizedColors")
-    val normalizedColors: List<NormalizedColor>,
+    override val normalizedColors: List<NormalizedColor>,
     @SerializedName("objectCollection")
-    val objectCollection: List<String>,
+    override val objectCollection: List<String>,
     @SerializedName("objectNumber")
-    val objectNumber: String,
+    override val objectNumber: String,
     @SerializedName("objectTypes")
-    val objectTypes: List<String>,
+    override val objectTypes: List<String>,
     @SerializedName("physicalMedium")
-    val physicalMedium: String,
+    override val physicalMedium: String,
     @SerializedName("physicalProperties")
-    val physicalProperties: List<Any>,
+    override val physicalProperties: List<Any>,
     @SerializedName("plaqueDescriptionDutch")
-    val plaqueDescriptionDutch: String,
+    override val plaqueDescriptionDutch: String,
     @SerializedName("plaqueDescriptionEnglish")
-    val plaqueDescriptionEnglish: String,
+    override val plaqueDescriptionEnglish: String,
     @SerializedName("principalMaker")
-    val principalMaker: String,
+    override val principalMaker: String,
     @SerializedName("principalMakers")
-    val principalMakers: List<PrincipalMaker>,
+    override val principalMakers: List<PrincipalMaker>,
     @SerializedName("principalOrFirstMaker")
-    val principalOrFirstMaker: String,
+    override val principalOrFirstMaker: String,
     @SerializedName("priref")
-    val priref: String,
+    override val priref: String,
     @SerializedName("productionPlaces")
-    val productionPlaces: List<String>,
+    override val productionPlaces: List<String>,
     @SerializedName("scLabelLine")
-    val scLabelLine: String,
+    override val scLabelLine: String,
     @SerializedName("showImage")
-    val showImage: Boolean,
+    override val showImage: Boolean,
     @SerializedName("subTitle")
-    val subTitle: String,
+    override val subTitle: String,
     @SerializedName("techniques")
-    val techniques: List<String>,
+    override val techniques: List<String>,
     @SerializedName("title")
-    val title: String,
+    override val title: String,
     @SerializedName("titles")
-    val titles: List<String>,
+    override val titles: List<String>,
     @SerializedName("webImage")
-    val webImage: WebImage
-)
+    override val webImage: com.example.domain.model.detail.WebImage
+) : com.example.domain.model.detail.ArtObject

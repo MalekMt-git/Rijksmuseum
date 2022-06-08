@@ -1,21 +1,23 @@
 package com.example.data.repository
 
-
-import com.example.data.model.headline.APIResponse
 import com.example.data.repository.dataSource.ArtObjectRemoteDataSource
-import com.example.data.util.Resource
+import com.example.common_architecture.util.Resource
+import com.example.domain.model.detail.DetailsAPIResponse
+import com.example.domain.model.headline.APIResponse
+import com.example.domain.model.headline.ArtObject
 import com.example.domain.repository.ArtObjectRepository
+import kotlinx.coroutines.flow.Flow
 import retrofit2.Response
+
 
 class ArtObjectRepositoryImpl(
     private val artObjectRemoteDataSource: ArtObjectRemoteDataSource
 ) : ArtObjectRepository {
-
-    override suspend fun <Resource> getArtObjects(
+    override suspend fun getArtObjects(
         language: String,
         pageRange: Int,
         page: Int
-    ): resource {
+    ): Resource<APIResponse> {
         return responseToResource(
             artObjectRemoteDataSource.getArtObjects(
                 language = language,
@@ -24,14 +26,6 @@ class ArtObjectRepositoryImpl(
             )
         )
     }
-
-//    override suspend fun <Resource : Resource<APIResponse>> getArtObjects(
-//        language: String,
-//        pageRange: Int,
-//        page: Int
-//    ): Resource {
-
-//    }
 
     private fun <T> responseToResource(response: Response<T>): Resource<T> {
         if (response.isSuccessful) {

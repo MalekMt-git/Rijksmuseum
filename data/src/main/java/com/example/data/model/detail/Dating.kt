@@ -2,16 +2,17 @@ package com.example.data.model.detail
 
 
 import com.google.gson.annotations.SerializedName
+import com.example.domain.model.detail.Dating
 
 data class Dating(
     @SerializedName("period")
-    val period: Int,
+    override val period: Int,
     @SerializedName("presentingDate")
-    val presentingDate: String,
+    override val presentingDate: String,
     @SerializedName("sortingDate")
-    val sortingDate: Int,
+    override val sortingDate: Int,
     @SerializedName("yearEarly")
-    val yearEarly: Int,
+    override val yearEarly: Int,
     @SerializedName("yearLate")
-    val yearLate: Int
-)
+    override val yearLate: Int
+) : Dating

@@ -1,17 +1,18 @@
 package com.example.data.model.detail
 
 
+import com.example.domain.model.detail.Dimension
 import com.google.gson.annotations.SerializedName
 
 data class Dimension(
     @SerializedName("part")
-    val part: Any?,
+    override val part: Any?,
     @SerializedName("precision")
-    val precision: Any?,
+    override val precision: Any?,
     @SerializedName("type")
-    val type: String,
+    override val type: String,
     @SerializedName("unit")
-    val unit: String,
+    override val unit: String,
     @SerializedName("value")
-    val value: String
-)
+    override val value: String
+) : Dimension

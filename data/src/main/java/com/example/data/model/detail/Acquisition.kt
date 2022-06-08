@@ -1,13 +1,14 @@
 package com.example.data.model.detail
 
 
+import com.example.domain.model.detail.Acquisition
 import com.google.gson.annotations.SerializedName
 
 data class Acquisition(
     @SerializedName("creditLine")
-    val creditLine: Any?,
+    override val creditLine: Any?,
     @SerializedName("date")
-    val date: String,
+    override val date: String,
     @SerializedName("method")
-    val method: String
-)
+    override val method: String
+) : Acquisition

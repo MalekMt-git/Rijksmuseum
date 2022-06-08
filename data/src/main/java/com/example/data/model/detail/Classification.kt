@@ -1,23 +1,24 @@
 package com.example.data.model.detail
 
 
+import com.example.domain.model.detail.Classification
 import com.google.gson.annotations.SerializedName
 
 data class Classification(
     @SerializedName("events")
-    val events: List<Any>,
+    override val events: List<Any>,
     @SerializedName("iconClassDescription")
-    val iconClassDescription: List<String>,
+    override val iconClassDescription: List<String>,
     @SerializedName("iconClassIdentifier")
-    val iconClassIdentifier: List<String>,
+    override val iconClassIdentifier: List<String>,
     @SerializedName("motifs")
-    val motifs: List<Any>,
+    override val motifs: List<Any>,
     @SerializedName("objectNumbers")
-    val objectNumbers: List<String>,
+    override val objectNumbers: List<String>,
     @SerializedName("people")
-    val people: List<String>,
+    override val people: List<String>,
     @SerializedName("periods")
-    val periods: List<Any>,
+    override val periods: List<Any>,
     @SerializedName("places")
-    val places: List<Any>
-)
+    override val places: List<Any>
+) : Classification

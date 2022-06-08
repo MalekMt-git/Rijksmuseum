@@ -1,15 +1,16 @@
 package com.example.data.model.headline
 
 
+import com.example.domain.model.headline.Facet
 import com.google.gson.annotations.SerializedName
 
 data class Facet(
     @SerializedName("facets")
-    val facets: List<FacetX>,
+    override val facets: List<FacetX>,
     @SerializedName("name")
-    val name: String,
+    override val name: String,
     @SerializedName("otherTerms")
-    val otherTerms: Int,
+    override val otherTerms: Int,
     @SerializedName("prettyName")
-    val prettyName: Int
-)
+    override val prettyName: Int
+) : Facet

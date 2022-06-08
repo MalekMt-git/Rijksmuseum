@@ -1,19 +1,20 @@
 package com.example.data.model.detail
 
 
+import com.example.domain.model.detail.WebImage
 import com.google.gson.annotations.SerializedName
 
 data class WebImage(
     @SerializedName("guid")
-    val guid: String,
+    override val guid: String,
     @SerializedName("height")
-    val height: Int,
+    override val height: Int,
     @SerializedName("offsetPercentageX")
-    val offsetPercentageX: Int,
+    override val offsetPercentageX: Int,
     @SerializedName("offsetPercentageY")
-    val offsetPercentageY: Int,
+    override val offsetPercentageY: Int,
     @SerializedName("url")
-    val url: String,
+    override val url: String,
     @SerializedName("width")
-    val width: Int
-)
+    override val width: Int
+) : WebImage

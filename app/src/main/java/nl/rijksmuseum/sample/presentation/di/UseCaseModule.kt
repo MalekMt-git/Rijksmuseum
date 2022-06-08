@@ -1,12 +1,12 @@
 package nl.rijksmuseum.sample.presentation.di
 
+import com.example.domain.repository.ArtObjectRepository
+import com.example.domain.usecase.GetArtObjectDetailsUseCase
+import com.example.domain.usecase.GetArtObjectUseCase
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
-import nl.rijksmuseum.sample.domain.repository.ArtObjectRepository
-import nl.rijksmuseum.sample.domain.usecase.GetArtObjectDetailsUseCase
-import nl.rijksmuseum.sample.domain.usecase.GetArtObjectUseCase
 import javax.inject.Singleton
 
 @Module
@@ -14,12 +14,12 @@ import javax.inject.Singleton
 class UseCaseModule {
     @Singleton
     @Provides
-    fun provideArtObjectsUseCase(artObjectRepository: ArtObjectRepository):GetArtObjectUseCase{
+    fun provideArtObjectsUseCase(artObjectRepository: ArtObjectRepository): GetArtObjectUseCase {
         return GetArtObjectUseCase(artObjectRepository)
     }
     @Singleton
     @Provides
-    fun provideArtObjectDetailsUseCase(artObjectRepository: ArtObjectRepository):GetArtObjectDetailsUseCase{
+    fun provideArtObjectDetailsUseCase(artObjectRepository: ArtObjectRepository): GetArtObjectDetailsUseCase {
         return GetArtObjectDetailsUseCase(artObjectRepository)
     }
 }

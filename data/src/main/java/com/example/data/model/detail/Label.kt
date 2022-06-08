@@ -1,17 +1,18 @@
 package com.example.data.model.detail
 
 
+import com.example.domain.model.detail.Label
 import com.google.gson.annotations.SerializedName
 
 data class Label(
     @SerializedName("date")
-    val date: String,
+    override val date: String,
     @SerializedName("description")
-    val description: String,
+    override val description: String,
     @SerializedName("makerLine")
-    val makerLine: String,
+    override val makerLine: String,
     @SerializedName("notes")
-    val notes: String,
+    override val notes: String,
     @SerializedName("title")
-    val title: String
-)
+    override val title: String
+) : Label

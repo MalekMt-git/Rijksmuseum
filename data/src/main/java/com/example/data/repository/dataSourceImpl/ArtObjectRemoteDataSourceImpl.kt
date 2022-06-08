@@ -1,9 +1,9 @@
 package com.example.data.repository.dataSourceImpl
 
 import com.example.data.api.ArtObjectAPIService
-import com.example.data.model.detail.DetailsAPIResponse
-import com.example.data.model.headline.APIResponse
 import com.example.data.repository.dataSource.ArtObjectRemoteDataSource
+import com.example.domain.model.detail.DetailsAPIResponse
+import com.example.domain.model.headline.APIResponse
 import retrofit2.Response
 
 class ArtObjectRemoteDataSourceImpl(
@@ -11,7 +11,7 @@ class ArtObjectRemoteDataSourceImpl(
     ): ArtObjectRemoteDataSource {
     override suspend fun getArtObjects(language : String,
                                        pageRange: Int,
-                                       page : Int): Response<APIResponse> {
+                                       page : Int): Response<out APIResponse> {
         return artObjectAPIService.getArtObjects(language = language,
             pageRange = pageRange,
             page = page)
@@ -20,7 +20,7 @@ class ArtObjectRemoteDataSourceImpl(
     override suspend fun getArtObjectDetails(
         objectId: String,
         language: String
-    ): Response<DetailsAPIResponse> {
+    ): Response<out DetailsAPIResponse> {
         return artObjectAPIService.getArtObjectDetails(language, objectId)
     }
 }

@@ -1,11 +1,12 @@
 package com.example.data.model.detail
 
 
+import com.example.domain.model.detail.ColorsWithNormalization
 import com.google.gson.annotations.SerializedName
 
 data class ColorsWithNormalization(
     @SerializedName("normalizedHex")
-    val normalizedHex: String,
+    override val normalizedHex: String,
     @SerializedName("originalHex")
-    val originalHex: String
-)
+    override val originalHex: String
+) : ColorsWithNormalization

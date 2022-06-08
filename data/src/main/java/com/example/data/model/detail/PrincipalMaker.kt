@@ -1,37 +1,38 @@
 package com.example.data.model.detail
 
 
+import com.example.domain.model.detail.PrincipalMaker
 import com.google.gson.annotations.SerializedName
 
 data class PrincipalMaker(
     @SerializedName("biography")
-    val biography: Any?,
+    override val biography: Any?,
     @SerializedName("dateOfBirth")
-    val dateOfBirth: String,
+    override val dateOfBirth: String,
     @SerializedName("dateOfBirthPrecision")
-    val dateOfBirthPrecision: Any?,
+    override val dateOfBirthPrecision: Any?,
     @SerializedName("dateOfDeath")
-    val dateOfDeath: String,
+    override val dateOfDeath: String,
     @SerializedName("dateOfDeathPrecision")
-    val dateOfDeathPrecision: Any?,
+    override val dateOfDeathPrecision: Any?,
     @SerializedName("labelDesc")
-    val labelDesc: String,
+    override val labelDesc: String,
     @SerializedName("name")
-    val name: String,
+    override val name: String,
     @SerializedName("nationality")
-    val nationality: Any?,
+    override val nationality: Any?,
     @SerializedName("occupation")
-    val occupation: List<String>,
+    override val occupation: List<String>,
     @SerializedName("placeOfBirth")
-    val placeOfBirth: String,
+    override val placeOfBirth: String,
     @SerializedName("placeOfDeath")
-    val placeOfDeath: String,
+    override val placeOfDeath: String,
     @SerializedName("productionPlaces")
-    val productionPlaces: List<String>,
+    override val productionPlaces: List<String>,
     @SerializedName("qualification")
-    val qualification: Any?,
+    override val qualification: Any?,
     @SerializedName("roles")
-    val roles: List<String>,
+    override val roles: List<String>,
     @SerializedName("unFixedName")
-    val unFixedName: String
-)
+    override val unFixedName: String
+) : PrincipalMaker

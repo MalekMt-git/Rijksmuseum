@@ -1,31 +1,32 @@
 package com.example.data.model.detail
 
 
+import com.example.domain.model.detail.ArtObjectPage
 import com.google.gson.annotations.SerializedName
 
 data class ArtObjectPage(
     @SerializedName("adlibOverrides")
-    val adlibOverrides: AdlibOverrides,
+    override val adlibOverrides: AdlibOverrides,
     @SerializedName("audioFile1")
-    val audioFile1: Any?,
+    override val audioFile1: Any?,
     @SerializedName("audioFileLabel1")
-    val audioFileLabel1: Any?,
+    override val audioFileLabel1: Any?,
     @SerializedName("audioFileLabel2")
-    val audioFileLabel2: Any?,
+    override val audioFileLabel2: Any?,
     @SerializedName("createdOn")
-    val createdOn: String,
+    override val createdOn: String,
     @SerializedName("id")
-    val id: String,
+    override val id: String,
     @SerializedName("lang")
-    val lang: String,
+    override val lang: String,
     @SerializedName("objectNumber")
-    val objectNumber: String,
+    override val objectNumber: String,
     @SerializedName("plaqueDescription")
-    val plaqueDescription: String,
+    override val plaqueDescription: String,
     @SerializedName("similarPages")
-    val similarPages: List<Any>,
+    override val similarPages: List<Any>,
     @SerializedName("tags")
-    val tags: List<Any>,
+    override val tags: List<Any>,
     @SerializedName("updatedOn")
-    val updatedOn: String
-)
+    override val updatedOn: String
+) : ArtObjectPage

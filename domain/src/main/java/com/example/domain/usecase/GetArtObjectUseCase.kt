@@ -1,14 +1,16 @@
 package com.example.domain.usecase
 
+import com.example.common_architecture.util.Resource
+import com.example.domain.model.headline.APIResponse
 import com.example.domain.repository.ArtObjectRepository
 
 
 class GetArtObjectUseCase(private val artObjectRepository: ArtObjectRepository) {
-    suspend fun<APIResponse> execute(language : String,
+    suspend fun execute(language : String,
                         pageRange: Int,
-                        page : Int): APIResponse{
+                        page : Int): Resource<APIResponse> {
         return artObjectRepository.getArtObjects(language=language,
-        pageRange=pageRange,
-        page=page)
+            pageRange=pageRange,
+            page=page)
     }
 }

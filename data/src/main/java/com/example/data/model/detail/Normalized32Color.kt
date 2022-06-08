@@ -1,11 +1,12 @@
 package com.example.data.model.detail
 
 
+import com.example.domain.model.detail.Normalized32Color
 import com.google.gson.annotations.SerializedName
 
 data class Normalized32Color(
     @SerializedName("hex")
-    val hex: String,
+    override val hex: String,
     @SerializedName("percentage")
-    val percentage: Int
-)
+    override val percentage: Int
+) : Normalized32Color

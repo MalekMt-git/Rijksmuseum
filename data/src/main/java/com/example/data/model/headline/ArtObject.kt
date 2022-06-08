@@ -1,31 +1,32 @@
 package com.example.data.model.headline
 
 
+import com.example.domain.model.headline.ArtObject
 import com.google.gson.annotations.SerializedName
 
 data class ArtObject(
     @SerializedName("hasImage")
-    val hasImage: Boolean,
+    override val hasImage: Boolean,
     @SerializedName("headerImage")
-    val headerImage: HeaderImage,
+    override val headerImage: HeaderImage,
     @SerializedName("id")
-    val id: String,
+    override val id: String,
     @SerializedName("links")
-    val links: Links,
+    override val links: Links,
     @SerializedName("longTitle")
-    val longTitle: String,
+    override val longTitle: String,
     @SerializedName("objectNumber")
-    val objectNumber: String,
+    override val objectNumber: String,
     @SerializedName("permitDownload")
-    val permitDownload: Boolean,
+    override val permitDownload: Boolean,
     @SerializedName("principalOrFirstMaker")
-    val principalOrFirstMaker: String,
+    override val principalOrFirstMaker: String,
     @SerializedName("productionPlaces")
-    val productionPlaces: List<String>,
+    override val productionPlaces: List<String>,
     @SerializedName("showImage")
-    val showImage: Boolean,
+    override val showImage: Boolean,
     @SerializedName("title")
-    val title: String,
+    override val title: String,
     @SerializedName("webImage")
-    val webImage: WebImage
-)
+    override val webImage: WebImage
+) : ArtObject

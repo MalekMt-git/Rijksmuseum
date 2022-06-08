@@ -3,7 +3,7 @@ package nl.rijksmuseum.sample.presentation.viewmodel
 import android.app.Application
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import nl.rijksmuseum.sample.domain.usecase.GetArtObjectDetailsUseCase
+import com.example.domain.usecase.GetArtObjectDetailsUseCase
 
 class DetailsViewModelFactory(
     private val app:Application,
