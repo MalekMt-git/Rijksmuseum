@@ -14,3 +14,6 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Rijksmuseum"
 include ':app'
+include ':domain'
+include ':data'
+include ':common_architecture'

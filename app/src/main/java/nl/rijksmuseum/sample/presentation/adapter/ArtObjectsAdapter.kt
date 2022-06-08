@@ -1,12 +1,13 @@
 package nl.rijksmuseum.sample.presentation.adapter
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import nl.rijksmuseum.sample.data.model.headline.ArtObject
+import com.example.domain.model.headline.ArtObject
 import nl.rijksmuseum.sample.databinding.ArtObjectListItemBinding
 
 class ArtObjectsAdapter: RecyclerView.Adapter<ArtObjectsAdapter.ArtObjectViewHolder>() {
@@ -17,6 +18,7 @@ class ArtObjectsAdapter: RecyclerView.Adapter<ArtObjectsAdapter.ArtObjectViewHol
             return oldItem.id == newItem.id
         }
 
+        @SuppressLint("DiffUtilEquals")
         override fun areContentsTheSame(oldItem: ArtObject, newItem: ArtObject): Boolean {
             return oldItem == newItem
         }

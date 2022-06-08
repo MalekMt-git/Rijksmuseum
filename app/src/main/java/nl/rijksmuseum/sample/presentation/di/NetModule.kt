@@ -1,11 +1,11 @@
 package nl.rijksmuseum.sample.presentation.di
 
+import com.example.data.api.ArtObjectAPIService
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import nl.rijksmuseum.sample.BuildConfig
-import nl.rijksmuseum.sample.data.api.ArtObjectAPIService
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import javax.inject.Singleton
@@ -23,7 +23,7 @@ class NetModule {
     }
     @Singleton
     @Provides
-    fun provideArtObjectsAPIService(retrofit: Retrofit):ArtObjectAPIService{
+    fun provideArtObjectsAPIService(retrofit: Retrofit): ArtObjectAPIService {
         return retrofit.create(ArtObjectAPIService::class.java)
     }
 

@@ -16,6 +16,7 @@
         <entry key="app/src/main/res/layout/table.xml" value="0.33" />
         <entry key="app/src/main/res/menu/bottom_menu.xml" value="0.2359375" />
         <entry key="app/src/main/res/xml/nav_background_curved.xml" value="0.15416666666666667" />
+        <entry key="domain/src/main/res/layout/activity_main.xml" value="0.18072916666666666" />
       </map>
     </option>
   </component>

@@ -10,9 +10,9 @@ import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.common_architecture.util.Resource
 import nl.rijksmuseum.sample.presentation.MainActivity
 import nl.rijksmuseum.sample.R
-import nl.rijksmuseum.sample.data.util.Resource
 import nl.rijksmuseum.sample.databinding.FragmentArtObjectsBinding
 import nl.rijksmuseum.sample.presentation.adapter.ArtObjectsAdapter
 import nl.rijksmuseum.sample.presentation.viewmodel.ArtObjectViewModel

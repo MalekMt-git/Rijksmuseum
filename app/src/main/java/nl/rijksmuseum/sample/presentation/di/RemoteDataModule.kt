@@ -1,12 +1,13 @@
 package nl.rijksmuseum.sample.presentation.di
 
+import com.example.data.api.ArtObjectAPIService
+import com.example.data.repository.dataSource.ArtObjectRemoteDataSource
+import com.example.data.repository.dataSourceImpl.ArtObjectRemoteDataSourceImpl
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
-import nl.rijksmuseum.sample.data.api.ArtObjectAPIService
-import nl.rijksmuseum.sample.data.repository.dataSource.ArtObjectRemoteDataSource
-import nl.rijksmuseum.sample.data.repository.dataSourceImpl.ArtObjectRemoteDataSourceImpl
+
 import javax.inject.Singleton
 
 @InstallIn(SingletonComponent::class)
@@ -15,7 +16,7 @@ class RemoteDataModule {
 
     @Singleton
     @Provides
-    fun provideArtObjectRemoteDatSource(artObjectAPIService: ArtObjectAPIService): ArtObjectRemoteDataSource{
+    fun provideArtObjectRemoteDatSource(artObjectAPIService: ArtObjectAPIService): ArtObjectRemoteDataSource {
         return ArtObjectRemoteDataSourceImpl(artObjectAPIService)
     }
 }

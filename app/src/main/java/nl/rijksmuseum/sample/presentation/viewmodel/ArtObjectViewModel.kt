@@ -1,18 +1,14 @@
 package nl.rijksmuseum.sample.presentation.viewmodel
 
 import android.app.Application
-import android.content.Context
-import android.net.ConnectivityManager
-import android.net.NetworkCapabilities
-import android.os.Build
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
+import com.example.common_architecture.util.Resource
+import com.example.domain.model.headline.APIResponse
+import com.example.domain.usecase.GetArtObjectUseCase
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
-import nl.rijksmuseum.sample.data.model.headline.APIResponse
-import nl.rijksmuseum.sample.data.util.Resource
-import nl.rijksmuseum.sample.domain.usecase.GetArtObjectUseCase
 import nl.rijksmuseum.sample.presentation.util.isNetworkAvailable
 
 class ArtObjectViewModel(
@@ -32,6 +28,7 @@ class ArtObjectViewModel(
                 page=page)
             artObject.postValue(apiResult)
         } catch (e:Exception){
+            throw e
             artObject.postValue(Resource.Error(e.message.toString()))
         }
     }

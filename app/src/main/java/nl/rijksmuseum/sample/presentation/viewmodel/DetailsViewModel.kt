@@ -3,11 +3,9 @@ package nl.rijksmuseum.sample.presentation.viewmodel
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.MutableLiveData
-import kotlinx.coroutines.flow.MutableStateFlow
-import kotlinx.coroutines.flow.StateFlow
-import nl.rijksmuseum.sample.data.model.detail.DetailsAPIResponse
-import nl.rijksmuseum.sample.data.util.Resource
-import nl.rijksmuseum.sample.domain.usecase.GetArtObjectDetailsUseCase
+import com.example.common_architecture.util.Resource
+import com.example.domain.model.detail.DetailsAPIResponse
+import com.example.domain.usecase.GetArtObjectDetailsUseCase
 import nl.rijksmuseum.sample.presentation.util.isNetworkAvailable
 
 class DetailsViewModel(
@@ -23,6 +21,7 @@ class DetailsViewModel(
                 val apiResult = getArtObjectDetailsUseCase.execute(objectId, language)
                 artObjectDetails.postValue(apiResult)
             } catch (e:Exception){
+                throw e
                 artObjectDetails.postValue(Resource.Error(e.message.toString()))
             }
 
