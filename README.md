@@ -1,5 +1,5 @@
 # Rijksmuseum Android Sample
-Clean Architecture + MVVM + Jetpack + UnitTesting + Hilt + Retrofit + View Binding + Kotlin + Web Mocking
+Clean Architecture + MVVM + Jetpack + UnitTesting + Hilt + Retrofit + View Binding + Kotlin + Web Mocking + Paging3
 
 To run this app you will need a API key from https://data.rijksmuseum.nl/object-metadata/api/
 
