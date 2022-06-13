@@ -1,16 +1,14 @@
 package com.example.domain.usecase
 
-import com.example.common_architecture.util.Resource
-import com.example.domain.model.headline.APIResponse
+import androidx.paging.PagingData
+import com.example.domain.model.headline.ArtObject
+import com.example.domain.model.query.ArtObjectHeadlinesQuery
 import com.example.domain.repository.ArtObjectRepository
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.flow.Flow
 
 
 class GetArtObjectUseCase(private val artObjectRepository: ArtObjectRepository) {
-    suspend fun execute(language : String,
-                        pageRange: Int,
-                        page : Int): Resource<APIResponse> {
-        return artObjectRepository.getArtObjects(language=language,
-            pageRange=pageRange,
-            page=page)
-    }
+     fun execute(defaultArtObjectHeadlinesQuery: ArtObjectHeadlinesQuery , coroutineScope: CoroutineScope): Flow<PagingData<out ArtObject>>
+    = artObjectRepository.getArtObjects(defaultArtObjectHeadlinesQuery,coroutineScope)
 }

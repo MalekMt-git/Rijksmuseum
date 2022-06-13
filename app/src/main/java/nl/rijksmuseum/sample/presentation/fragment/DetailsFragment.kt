@@ -17,6 +17,7 @@ import com.bumptech.glide.load.engine.GlideException
 import com.bumptech.glide.request.RequestListener
 import com.bumptech.glide.request.target.Target
 import com.example.common_architecture.util.Resource
+import com.example.domain.model.query.ArtObjectDetailsQuery
 import kotlinx.coroutines.launch
 import nl.rijksmuseum.sample.R
 import nl.rijksmuseum.sample.databinding.FragmentDetailsBinding
@@ -25,8 +26,7 @@ import nl.rijksmuseum.sample.presentation.viewmodel.DetailsViewModel
 
 class DetailsFragment : Fragment() {
     private lateinit var viewModel : DetailsViewModel
-    private lateinit var objectId : String
-    private lateinit var language : String
+    private lateinit var artObjectDetailsQuery: ArtObjectDetailsQuery
     private lateinit var binding: FragmentDetailsBinding
     private var isLoading = false
     override fun onCreateView(
@@ -41,8 +41,7 @@ class DetailsFragment : Fragment() {
         binding = FragmentDetailsBinding.bind(view)
         viewModel= (activity as MainActivity).detailsViewModel
         val args : DetailsFragmentArgs by navArgs()
-        objectId = args.objectId
-        language = args.language
+         artObjectDetailsQuery = args.artObjectDetailsQueryImpl
 
         showProgressBar()
         viewArtObjectDetails()
@@ -52,7 +51,7 @@ class DetailsFragment : Fragment() {
         showProgressBar()
         viewLifecycleOwner.lifecycleScope.launch {
             repeatOnLifecycle(Lifecycle.State.STARTED) {
-                viewModel.getArtObjectDetails(objectId, language)
+                viewModel.getArtObjectDetails(artObjectDetailsQuery)
                 viewModel.artObjectDetails.observe(viewLifecycleOwner) { resource ->
                     when(resource){
                         is Resource.Success ->{
