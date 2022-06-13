@@ -29,10 +29,7 @@
         android:label="fragment_details"
         tools:layout="@layout/fragment_details" >
         <argument
-            android:name="objectId"
-            app:argType="string" />
-        <argument
-            android:name="language"
-            app:argType="string" />
+            android:name="artObjectDetailsQueryImpl"
+            app:argType="com.example.data.model.query.ArtObjectDetailsQueryImpl" />
     </fragment>
 </navigation>

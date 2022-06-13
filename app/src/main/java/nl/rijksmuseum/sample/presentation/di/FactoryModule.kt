@@ -14,18 +14,14 @@ import javax.inject.Singleton
 @Module
 @InstallIn(SingletonComponent::class)
 class FactoryModule {
+
     @Singleton
     @Provides
-    fun provideArtObjectViewModelFactory(application: Application,
-                                         getArtObjectUseCase: GetArtObjectUseCase
-    ):ArtObjectViewModelFactory{
-        return ArtObjectViewModelFactory(application,getArtObjectUseCase)
-    }
+    fun provideArtObjectViewModelFactory(getArtObjectUseCase: GetArtObjectUseCase)
+    = ArtObjectViewModelFactory(getArtObjectUseCase)
+
     @Singleton
     @Provides
-    fun provideArtObjectDetailsViewModelFactory(application: Application,
-                                                getArtObjectDetailsUseCase: GetArtObjectDetailsUseCase
-    ):DetailsViewModelFactory{
-        return DetailsViewModelFactory(application, getArtObjectDetailsUseCase)
-    }
+    fun provideArtObjectDetailsViewModelFactory(application: Application, getArtObjectDetailsUseCase: GetArtObjectDetailsUseCase)
+    = DetailsViewModelFactory(application, getArtObjectDetailsUseCase)
 }

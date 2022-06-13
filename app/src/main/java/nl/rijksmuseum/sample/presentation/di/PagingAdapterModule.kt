@@ -4,13 +4,13 @@ import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
-import nl.rijksmuseum.sample.presentation.adapter.ArtObjectsAdapter
+import nl.rijksmuseum.sample.presentation.adapter.ArtObjectsPagingAdapter
 import javax.inject.Singleton
 
 @Module
 @InstallIn(SingletonComponent::class)
-class AdapterModule {
+class PagingAdapterModule {
     @Singleton
     @Provides
-    fun providerArtObjectAdapter() = ArtObjectsAdapter()
+    fun providerPagingArtObjectAdapter() = ArtObjectsPagingAdapter()
 }

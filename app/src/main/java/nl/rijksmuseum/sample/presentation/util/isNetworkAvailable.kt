@@ -4,6 +4,7 @@ import android.content.Context
 import android.net.ConnectivityManager
 import android.net.NetworkCapabilities
 import android.os.Build
+import android.widget.Toast
 
 fun isNetworkAvailable(context: Context?):Boolean{
     if (context == null) return false
@@ -29,5 +30,6 @@ fun isNetworkAvailable(context: Context?):Boolean{
             return true
         }
     }
+    Toast.makeText(context , "Network is not Available", Toast.LENGTH_LONG).show()
     return false
 }
