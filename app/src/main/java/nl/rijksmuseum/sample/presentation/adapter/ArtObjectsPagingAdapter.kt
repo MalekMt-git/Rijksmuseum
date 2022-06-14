@@ -39,9 +39,11 @@ class ArtObjectsPagingAdapter: PagingDataAdapter<ArtObject,ArtObjectsPagingAdapt
 
     companion object {
         private val diffUtil = object : DiffUtil.ItemCallback<ArtObject>() {
-            override fun areItemsTheSame(oldItem: ArtObject, newItem: ArtObject) = oldItem.id == newItem.id
+            override fun areItemsTheSame(oldItem: ArtObject, newItem: ArtObject)
+            = oldItem.id == newItem.id
             @SuppressLint("DiffUtilEquals")
-            override fun areContentsTheSame(oldItem: ArtObject, newItem: ArtObject) = oldItem == newItem
+            override fun areContentsTheSame(oldItem: ArtObject, newItem: ArtObject)
+            = oldItem == newItem
         }
     }
 }
