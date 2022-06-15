@@ -51,7 +51,7 @@ class ArtObjectsFragment : Fragment() {
     }
 
     private fun viewArtObjectList() {
-        val pagingSize = 10
+        val pagingSize = 5
         lifecycleScope.launch {
             repeatOnLifecycle(Lifecycle.State.STARTED) {
                 viewModel.getArtObjects(ArtObjectHeadlinesQueryImpl("en" , pagingSize , 1 )) .collectLatest {

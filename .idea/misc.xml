@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_baseline_download_done_24.xml" value="0.2665" />
         <entry key="app/src/main/res/drawable/nav_background_curved.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.23697916666666666" />
@@ -10,10 +11,11 @@
         <entry key="app/src/main/res/layout/fragment_art_object.xml" value="0.23697916666666666" />
         <entry key="app/src/main/res/layout/fragment_art_objects.xml" value="0.14114583333333333" />
         <entry key="app/src/main/res/layout/fragment_detail.xml" value="0.303125" />
-        <entry key="app/src/main/res/layout/fragment_details.xml" value="0.14114583333333333" />
+        <entry key="app/src/main/res/layout/fragment_details.xml" value="0.165" />
         <entry key="app/src/main/res/layout/fragment_info.xml" value="0.33" />
         <entry key="app/src/main/res/layout/fragment_saved.xml" value="0.23697916666666666" />
         <entry key="app/src/main/res/layout/table.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/viewpager_item.xml" value="0.12715298885511653" />
         <entry key="app/src/main/res/menu/bottom_menu.xml" value="0.2359375" />
         <entry key="app/src/main/res/xml/nav_background_curved.xml" value="0.15416666666666667" />
         <entry key="domain/src/main/res/layout/activity_main.xml" value="0.18072916666666666" />

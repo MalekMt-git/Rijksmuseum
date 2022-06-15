@@ -6,6 +6,7 @@ import androidx.paging.cachedIn
 import com.example.data.api.ArtObjectAPIService
 import com.example.data.model.query.ArtObjectHeadlinesQueryImpl
 import com.example.domain.model.detail.DetailsAPIResponse
+import com.example.domain.model.image.Image
 import com.example.domain.model.query.ArtObjectDetailsQuery
 import com.example.domain.model.query.ArtObjectHeadlinesQuery
 import kotlinx.coroutines.CoroutineScope
@@ -23,5 +24,11 @@ class ArtObjectRemoteDataSource(
         artObjectDetailsQuery: ArtObjectDetailsQuery
     ): Response<out DetailsAPIResponse> {
         return artObjectAPIService.getArtObjectDetails(language = artObjectDetailsQuery.language, objectId = artObjectDetailsQuery.objectId)
+    }
+
+    suspend fun getArtObjectImages(
+        artObjectDetailsQuery: ArtObjectDetailsQuery
+    ): Response<out Image> {
+        return artObjectAPIService.getArtObjectImages(language = artObjectDetailsQuery.language, objectId = artObjectDetailsQuery.objectId)
     }
 }

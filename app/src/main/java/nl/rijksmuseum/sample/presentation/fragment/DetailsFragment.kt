@@ -17,11 +17,13 @@ import com.bumptech.glide.load.engine.GlideException
 import com.bumptech.glide.request.RequestListener
 import com.bumptech.glide.request.target.Target
 import com.example.common_architecture.util.Resource
+import com.example.data.model.image.Image
 import com.example.domain.model.query.ArtObjectDetailsQuery
 import kotlinx.coroutines.launch
 import nl.rijksmuseum.sample.R
 import nl.rijksmuseum.sample.databinding.FragmentDetailsBinding
 import nl.rijksmuseum.sample.presentation.MainActivity
+import nl.rijksmuseum.sample.presentation.adapter.ViewPagerAdapter
 import nl.rijksmuseum.sample.presentation.viewmodel.DetailsViewModel
 
 class DetailsFragment : Fragment() {
@@ -41,24 +43,43 @@ class DetailsFragment : Fragment() {
         binding = FragmentDetailsBinding.bind(view)
         viewModel= (activity as MainActivity).detailsViewModel
         val args : DetailsFragmentArgs by navArgs()
-         artObjectDetailsQuery = args.artObjectDetailsQueryImpl
-
-        showProgressBar()
-        viewArtObjectDetails()
+        artObjectDetailsQuery = args.artObjectDetailsQueryImpl
+        hidProgressBar()
+        viewArtObjectImages()
     }
 
-    private fun viewArtObjectDetails(){
-        showProgressBar()
+
+    private fun viewArtObjectImages() {
         viewLifecycleOwner.lifecycleScope.launch {
             repeatOnLifecycle(Lifecycle.State.STARTED) {
-                viewModel.getArtObjectDetails(artObjectDetailsQuery)
-                viewModel.artObjectDetails.observe(viewLifecycleOwner) { resource ->
+                viewModel.getArtObjectImages(artObjectDetailsQuery)
+                    .observe(viewLifecycleOwner) { resource ->
+                        when (resource) {
+                            is Resource.Success -> {
+                                resource.data?.let{
+                                    binding.viewpager2.adapter = ViewPagerAdapter(it as Image)
+                                    viewArtObjectDetails()
+                                }
+                            }
+                            else -> {
+                                Toast.makeText(context, resource.message, Toast.LENGTH_LONG).show()
+                            }
+                        }
+                    }
+            }
+        }
+    }
+    private fun viewArtObjectDetails(){
+        //showProgressBar()
+        viewLifecycleOwner.lifecycleScope.launch {
+            repeatOnLifecycle(Lifecycle.State.STARTED) {
+                    viewModel.getArtObjectDetails(artObjectDetailsQuery).observe(viewLifecycleOwner) { resource ->
                     when(resource){
                         is Resource.Success ->{
                             resource.data?.let {
                                 binding.headerTitle.text = it.detailsArtObject.title
                                 binding.headerBody.text = it.detailsArtObject.description
-
+/*
                                 Glide.with(binding.mainArtPicture.context)
                                     .load(it.detailsArtObject.webImage.url)
                                     .listener(object : RequestListener<Drawable>{
@@ -83,7 +104,7 @@ class DetailsFragment : Fragment() {
                                         }
 
                                     })
-                                    .into(binding.mainArtPicture)
+                                    .into(binding.mainArtPicture)*/
                                 binding.root.setOnClickListener{
 
                                 }
@@ -96,7 +117,7 @@ class DetailsFragment : Fragment() {
                             }
                         }
                         is Resource.Loading ->{
-                            showProgressBar()
+                            //showProgressBar()
                         }
                     }
                 }
@@ -110,13 +131,13 @@ class DetailsFragment : Fragment() {
         binding.progressBar.visibility = View.VISIBLE
         binding.headerTitle.visibility = View.INVISIBLE
         binding.headerBody.visibility = View.INVISIBLE
-        binding.mainArtPicture.visibility = View.INVISIBLE
+        //binding.mainArtPicture.visibility = View.INVISIBLE
     }
     private fun hidProgressBar(){
         isLoading = false
         binding.headerTitle.visibility = View.VISIBLE
         binding.headerBody.visibility = View.VISIBLE
-        binding.mainArtPicture.visibility = View.VISIBLE
+        //binding.mainArtPicture.visibility = View.VISIBLE
         binding.progressBar.visibility = View.GONE
     }
 }

@@ -5,6 +5,7 @@ import com.example.common_architecture.util.Resource
 import com.example.domain.model.detail.DetailsAPIResponse
 import com.example.domain.model.headline.APIResponse
 import com.example.domain.model.headline.ArtObject
+import com.example.domain.model.image.Image
 import com.example.domain.model.query.ArtObjectDetailsQuery
 import com.example.domain.model.query.ArtObjectHeadlinesQuery
 import kotlinx.coroutines.CoroutineScope
@@ -15,6 +16,7 @@ interface ArtObjectRepository {
     fun getArtObjects(defaultArtObjectHeadlinesQuery: ArtObjectHeadlinesQuery, coroutineScope: CoroutineScope) : Flow<PagingData<out ArtObject>>
     suspend fun getSearchedArtObject(searchQuery: String) : Resource<APIResponse>
     suspend fun getArtObjectDetails(artObjectDetailsQuery: ArtObjectDetailsQuery) : Resource<DetailsAPIResponse>
+    suspend fun getArtObjectImages(artObjectDetailsQuery: ArtObjectDetailsQuery) : Resource<Image>
     suspend fun saveArtObject(artObject: ArtObject)
     suspend fun deleteSavedArtObject(artObject: ArtObject)
     fun getSavedArtObjects() : Flow<List<ArtObject>>

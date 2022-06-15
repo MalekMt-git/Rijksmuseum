@@ -22,6 +22,6 @@ class FactoryModule {
 
     @Singleton
     @Provides
-    fun provideArtObjectDetailsViewModelFactory(application: Application, getArtObjectDetailsUseCase: GetArtObjectDetailsUseCase)
-    = DetailsViewModelFactory(application, getArtObjectDetailsUseCase)
+    fun provideArtObjectDetailsViewModelFactory(getArtObjectDetailsUseCase: GetArtObjectDetailsUseCase)
+    = DetailsViewModelFactory(getArtObjectDetailsUseCase)
 }

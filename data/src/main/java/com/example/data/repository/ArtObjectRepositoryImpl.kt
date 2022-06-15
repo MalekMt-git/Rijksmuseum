@@ -1,12 +1,7 @@
 package com.example.data.repository
 
-import androidx.paging.Pager
-import androidx.paging.PagingConfig
 import androidx.paging.PagingData
-import androidx.paging.cachedIn
 import com.example.common_architecture.util.Resource
-import com.example.data.model.query.ArtObjectHeadlinesQueryImpl
-import com.example.data.repository.dataSource.ArtObjectPagingSource
 import com.example.data.repository.dataSource.ArtObjectRemoteDataSource
 import com.example.domain.model.detail.DetailsAPIResponse
 import com.example.domain.model.headline.APIResponse
@@ -29,6 +24,9 @@ class ArtObjectRepositoryImpl(private val artObjectRemoteDataSource: ArtObjectRe
     override suspend fun getArtObjectDetails(
         artObjectDetailsQuery: ArtObjectDetailsQuery
     ): Resource<DetailsAPIResponse> = responseToResource(artObjectRemoteDataSource.getArtObjectDetails(artObjectDetailsQuery))
+
+    override suspend fun getArtObjectImages(artObjectDetailsQuery: ArtObjectDetailsQuery)
+    = responseToResource(artObjectRemoteDataSource.getArtObjectImages(artObjectDetailsQuery))
 
 
     override suspend fun getSearchedArtObject(searchQuery: String): Resource<APIResponse> {
