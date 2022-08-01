@@ -2,8 +2,9 @@ package com.example.data.repository
 
 import androidx.paging.PagingData
 import com.example.common_architecture.util.Resource
-import com.example.data.repository.dataSource.ArtObjectRemoteDataSource
+import com.example.data.repository.dataSource.ArtObjectDataSource
 import com.example.domain.model.detail.DetailsAPIResponse
+import com.example.domain.model.detail.DetailsArtObject
 import com.example.domain.model.headline.APIResponse
 import com.example.domain.model.headline.ArtObject
 import com.example.domain.model.query.ArtObjectDetailsQuery
@@ -14,34 +15,30 @@ import kotlinx.coroutines.flow.Flow
 import retrofit2.Response
 
 
-class ArtObjectRepositoryImpl(private val artObjectRemoteDataSource: ArtObjectRemoteDataSource) : ArtObjectRepository {
+class ArtObjectRepositoryImpl(private val artObjectDataSource: ArtObjectDataSource) : ArtObjectRepository {
 
     override fun getArtObjects(
         defaultArtObjectHeadlinesQuery: ArtObjectHeadlinesQuery,
         coroutineScope: CoroutineScope
-    ): Flow<PagingData<out ArtObject>> = artObjectRemoteDataSource.getArtObjects(defaultArtObjectHeadlinesQuery,coroutineScope)
+    ): Flow<PagingData<out ArtObject>> = artObjectDataSource.getArtObjects(defaultArtObjectHeadlinesQuery,coroutineScope)
 
     override suspend fun getArtObjectDetails(
         artObjectDetailsQuery: ArtObjectDetailsQuery
-    ): Resource<DetailsAPIResponse> = responseToResource(artObjectRemoteDataSource.getArtObjectDetails(artObjectDetailsQuery))
-
-    override suspend fun getArtObjectImages(artObjectDetailsQuery: ArtObjectDetailsQuery)
-    = responseToResource(artObjectRemoteDataSource.getArtObjectImages(artObjectDetailsQuery))
-
+    ): Resource<DetailsAPIResponse> = responseToResource(artObjectDataSource.getArtObjectDetails(artObjectDetailsQuery))
 
     override suspend fun getSearchedArtObject(searchQuery: String): Resource<APIResponse> {
         TODO("Not yet implemented")
     }
 
-    override suspend fun saveArtObject(artObject: ArtObject) {
+    override suspend fun saveArtObjectDetails(detailsArtObject: DetailsArtObject) {
         TODO("Not yet implemented")
     }
 
-    override suspend fun deleteSavedArtObject(artObject: ArtObject) {
+    override suspend fun deleteSavedArtObjectDetails(detailsArtObject: DetailsArtObject) {
         TODO("Not yet implemented")
     }
 
-    override fun getSavedArtObjects(): Flow<List<ArtObject>> {
+    override fun getSavedArtObjectsDetails(): Flow<List<DetailsArtObject>> {
         TODO("Not yet implemented")
     }
 

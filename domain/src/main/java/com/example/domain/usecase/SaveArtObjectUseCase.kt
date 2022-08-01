@@ -1,8 +1,9 @@
 package com.example.domain.usecase
 
-import com.example.domain.model.headline.ArtObject
+import com.example.domain.model.detail.DetailsAPIResponse
+import com.example.domain.model.detail.DetailsArtObject
 import com.example.domain.repository.ArtObjectRepository
 
 class SaveArtObjectUseCase(private val artObjectRepository: ArtObjectRepository) {
-    suspend fun execute(artObject: ArtObject)= artObjectRepository.saveArtObject(artObject)
+    suspend fun execute(detailsArtObject: DetailsArtObject)= artObjectRepository.saveArtObjectDetails(detailsArtObject)
 }

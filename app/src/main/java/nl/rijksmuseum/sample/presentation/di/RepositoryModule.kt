@@ -1,7 +1,7 @@
 package nl.rijksmuseum.sample.presentation.di
 
 import com.example.data.repository.ArtObjectRepositoryImpl
-import com.example.data.repository.dataSource.ArtObjectRemoteDataSource
+import com.example.data.repository.dataSource.ArtObjectDataSource
 import com.example.domain.repository.ArtObjectRepository
 import dagger.Module
 import dagger.Provides
@@ -14,7 +14,7 @@ import javax.inject.Singleton
 class RepositoryModule {
     @Singleton
     @Provides
-    fun provideArtObjectRepository(artObjectRemoteDataSource: ArtObjectRemoteDataSource): ArtObjectRepository {
-        return ArtObjectRepositoryImpl(artObjectRemoteDataSource)
+    fun provideArtObjectRepository(artObjectDataSource: ArtObjectDataSource): ArtObjectRepository {
+        return ArtObjectRepositoryImpl(artObjectDataSource)
     }
 }

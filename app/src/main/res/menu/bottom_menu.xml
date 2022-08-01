@@ -5,6 +5,10 @@
         android:id="@+id/artObjectFragment"
         android:icon="@drawable/ic_baseline_view_list_24"
         android:title="Art objects" />
+<!--    <item-->
+<!--        android:id="@+id/ArtistsFragment"-->
+<!--        android:icon="@android:drawable/ic_menu_my_calendar"-->
+<!--        android:title="Artists" />-->
     <item
         android:id="@+id/savedFragment"
         android:icon="@drawable/ic_baseline_save_24"

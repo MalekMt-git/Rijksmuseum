@@ -1,7 +1,8 @@
 package nl.rijksmuseum.sample.presentation.fragment
 
-import android.opengl.Visibility
+import android.nfc.Tag
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -22,52 +23,53 @@ import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
 import nl.rijksmuseum.sample.R
 import nl.rijksmuseum.sample.databinding.FragmentArtObjectsBinding
+import nl.rijksmuseum.sample.databinding.FragmentSavedBinding
 import nl.rijksmuseum.sample.presentation.MainActivity
 import nl.rijksmuseum.sample.presentation.adapter.ArtObjectsPagingAdapter
 import nl.rijksmuseum.sample.presentation.util.isNetworkAvailable
 import nl.rijksmuseum.sample.presentation.viewmodel.ArtObjectViewModel
 
+private const val PAGING_SIZE = 10
+
 class ArtObjectsFragment : Fragment() {
     private lateinit var viewModel: ArtObjectViewModel
     private lateinit var artObjectsPagingAdapter: ArtObjectsPagingAdapter
-    private lateinit var binding: FragmentArtObjectsBinding
+    private val binding : FragmentArtObjectsBinding by lazy { FragmentArtObjectsBinding.inflate(layoutInflater) }
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        return inflater.inflate(R.layout.fragment_art_objects, container, false)
-    }
+    ): View = binding.root
+
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding = FragmentArtObjectsBinding.bind(view)
         viewModel= (activity as MainActivity).artObjectViewModel
         artObjectsPagingAdapter = (activity as MainActivity).artObjectsPagingAdapter
-        artObjectsPagingAdapter.setOnClickListener {
-            findNavController().navigate(ArtObjectsFragmentDirections.actionArtObjectFragmentToInfoFragment(ArtObjectDetailsQueryImpl(it.objectNumber , "en")))
-        }
+        artObjectsPagingAdapter.setOnClickListener { findNavController().navigate(ArtObjectsFragmentDirections.actionArtObjectFragmentToInfoFragment(ArtObjectDetailsQueryImpl(it.objectNumber , "en"))) }
         initRecyclerView()
         if (isNetworkAvailable(this.context)) viewArtObjectList()
     }
 
     private fun viewArtObjectList() {
-        val pagingSize = 5
+
         lifecycleScope.launch {
             repeatOnLifecycle(Lifecycle.State.STARTED) {
-                viewModel.getArtObjects(ArtObjectHeadlinesQueryImpl("en" , pagingSize , 1 )) .collectLatest {
+                viewModel.getArtObjects(ArtObjectHeadlinesQueryImpl("en" , PAGING_SIZE , 1 )) .collectLatest {
                     artObjectsPagingAdapter.submitData(it as PagingData<ArtObject>)
                 }
             }
         }
 
-        lifecycleScope.launch {
-            repeatOnLifecycle(Lifecycle.State.STARTED) {
-                artObjectsPagingAdapter.loadStateFlow.collect {
-                    binding.prependProgress.isVisible = it.source.prepend is LoadState.Loading
-                    binding.appendProgress.isVisible = it.source.append is LoadState.Loading
-                }
-            }
-        }
+//        lifecycleScope.launch {
+//            repeatOnLifecycle(Lifecycle.State.STARTED) {
+//                artObjectsPagingAdapter.loadStateFlow.collect {
+//                    if (it.source.refresh is LoadState.Loading) {
+//                        Log.i("ArtObjectsFragment", "LoadState: ${it.source}")
+//                        binding.prependProgress.isVisible = it.source.prepend is LoadState.Loading
+//                    }
+//                }
+//            }
+//        }
     }
 
     private fun initRecyclerView() {

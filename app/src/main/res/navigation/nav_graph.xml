@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/savedFragment"
-        android:name="nl.rijksmuseum.sample.presentation.fragment.SavedFragment"
+        android:name="nl.rijksmuseum.sample.presentation.fragment.SavedItemsFragment"
         android:label="fragment_saved"
         tools:layout="@layout/fragment_saved" >
         <action

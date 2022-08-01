@@ -8,5 +8,4 @@ import kotlinx.coroutines.Dispatchers
 
 class DetailsViewModel(private val getArtObjectDetailsUseCase: GetArtObjectDetailsUseCase): ViewModel() {
     fun getArtObjectDetails(query: ArtObjectDetailsQuery) = liveData(Dispatchers.IO){ emit(getArtObjectDetailsUseCase.getDetails(query))}
-    fun getArtObjectImages(query: ArtObjectDetailsQuery) = liveData(Dispatchers.IO){ emit(getArtObjectDetailsUseCase.getImages(query))}
 }
